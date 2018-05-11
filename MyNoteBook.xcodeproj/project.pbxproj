@@ -1,0 +1,1253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0710682D1D58F02800D5B93B /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0710682B1D58F02800D5B93B /* UserInfoViewController.m */; };
+		0710682E1D58F02800D5B93B /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0710682B1D58F02800D5B93B /* UserInfoViewController.m */; };
+		0710682F1D58F02800D5B93B /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0710682C1D58F02800D5B93B /* UserInfoViewController.xib */; };
+		071068301D58F02800D5B93B /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0710682C1D58F02800D5B93B /* UserInfoViewController.xib */; };
+		071068351D58F28600D5B93B /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 071068341D58F28600D5B93B /* AppIcon.png */; };
+		071068361D58F28600D5B93B /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 071068341D58F28600D5B93B /* AppIcon.png */; };
+		071798F31B3A8EB20036F759 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F21B3A8EB20036F759 /* main.m */; };
+		071798F61B3A8EB20036F759 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F51B3A8EB20036F759 /* AppDelegate.m */; };
+		071798F91B3A8EB20036F759 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F81B3A8EB20036F759 /* ViewController.m */; };
+		071798FC1B3A8EB20036F759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071798FA1B3A8EB20036F759 /* Main.storyboard */; };
+		071798FE1B3A8EB20036F759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071798FD1B3A8EB20036F759 /* Images.xcassets */; };
+		071799011B3A8EB20036F759 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071798FF1B3A8EB20036F759 /* LaunchScreen.xib */; };
+		0717990D1B3A8EB20036F759 /* MyNoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717990C1B3A8EB20036F759 /* MyNoteBookTests.m */; };
+		0717991D1B3A93030036F759 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 0717991B1B3A93030036F759 /* note.png */; };
+		071799211B3AA14B0036F759 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717991F1B3AA14B0036F759 /* MyCell.m */; };
+		071799221B3AA14B0036F759 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071799201B3AA14B0036F759 /* MyCell.xib */; };
+		071A33961CE1E0EE0077D671 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33631CE1E0EE0077D671 /* ShareSDK.framework */; };
+		071A33971CE1E0EE0077D671 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33631CE1E0EE0077D671 /* ShareSDK.framework */; };
+		071A33981CE1E0EE0077D671 /* ShareSDKExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33661CE1E0EE0077D671 /* ShareSDKExtension.framework */; };
+		071A33991CE1E0EE0077D671 /* ShareSDKExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33661CE1E0EE0077D671 /* ShareSDKExtension.framework */; };
+		071A339A1CE1E0EE0077D671 /* ShareSDKInterfaceAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33671CE1E0EE0077D671 /* ShareSDKInterfaceAdapter.framework */; };
+		071A339B1CE1E0EE0077D671 /* ShareSDKInterfaceAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33671CE1E0EE0077D671 /* ShareSDKInterfaceAdapter.framework */; };
+		071A339C1CE1E0EE0077D671 /* ShareSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071A33681CE1E0EE0077D671 /* ShareSDKUI.bundle */; };
+		071A339D1CE1E0EE0077D671 /* ShareSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071A33681CE1E0EE0077D671 /* ShareSDKUI.bundle */; };
+		071A339E1CE1E0EE0077D671 /* ShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33691CE1E0EE0077D671 /* ShareSDKUI.framework */; };
+		071A339F1CE1E0EE0077D671 /* ShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33691CE1E0EE0077D671 /* ShareSDKUI.framework */; };
+		071A33A81CE1E0EE0077D671 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33751CE1E0EE0077D671 /* TencentOpenAPI.framework */; };
+		071A33A91CE1E0EE0077D671 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33751CE1E0EE0077D671 /* TencentOpenAPI.framework */; };
+		071A33AA1CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071A33761CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		071A33AB1CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071A33761CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		071A33B01CE1E0EE0077D671 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A337B1CE1E0EE0077D671 /* libWeiboSDK.a */; };
+		071A33B11CE1E0EE0077D671 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A337B1CE1E0EE0077D671 /* libWeiboSDK.a */; };
+		071A33B21CE1E0EE0077D671 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071A33851CE1E0EE0077D671 /* WeiboSDK.bundle */; };
+		071A33B31CE1E0EE0077D671 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071A33851CE1E0EE0077D671 /* WeiboSDK.bundle */; };
+		071A33B41CE1E0EE0077D671 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33891CE1E0EE0077D671 /* libWeChatSDK.a */; };
+		071A33B51CE1E0EE0077D671 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33891CE1E0EE0077D671 /* libWeChatSDK.a */; };
+		071A33B61CE1E0EE0077D671 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 071A338A1CE1E0EE0077D671 /* read_me.txt */; };
+		071A33B71CE1E0EE0077D671 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 071A338A1CE1E0EE0077D671 /* read_me.txt */; };
+		071A33BA1CE1E0EE0077D671 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33931CE1E0EE0077D671 /* MOBFoundation.framework */; };
+		071A33BB1CE1E0EE0077D671 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33931CE1E0EE0077D671 /* MOBFoundation.framework */; };
+		071A33BC1CE1E0EE0077D671 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071A33941CE1E0EE0077D671 /* ShareSDK.bundle */; };
+		071A33BD1CE1E0EE0077D671 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071A33941CE1E0EE0077D671 /* ShareSDK.bundle */; };
+		071A33BE1CE1E0EE0077D671 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33951CE1E0EE0077D671 /* ShareSDKConnector.framework */; };
+		071A33BF1CE1E0EE0077D671 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33951CE1E0EE0077D671 /* ShareSDKConnector.framework */; };
+		071A33C11CE1E1EB0077D671 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C01CE1E1EB0077D671 /* libicucore.tbd */; };
+		071A33C31CE1E1F30077D671 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C21CE1E1F30077D671 /* libz.tbd */; };
+		071A33C51CE1E2000077D671 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C41CE1E2000077D671 /* libstdc++.tbd */; };
+		071A33C71CE1E2080077D671 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C61CE1E2080077D671 /* JavaScriptCore.framework */; };
+		071A33C91CE1E2200077D671 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C81CE1E2200077D671 /* ImageIO.framework */; };
+		071A33CB1CE1E2300077D671 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33CA1CE1E2300077D671 /* AdSupport.framework */; };
+		072EE2331D478D410056C9D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33CA1CE1E2300077D671 /* AdSupport.framework */; };
+		072EE2341D478D430056C9D8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C81CE1E2200077D671 /* ImageIO.framework */; };
+		072EE2351D478D450056C9D8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C61CE1E2080077D671 /* JavaScriptCore.framework */; };
+		072EE2361D478D730056C9D8 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C41CE1E2000077D671 /* libstdc++.tbd */; };
+		072EE2371D478DA00056C9D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C21CE1E1F30077D671 /* libz.tbd */; };
+		072EE2381D478F530056C9D8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C01CE1E1EB0077D671 /* libicucore.tbd */; };
+		073F7A711D37F391007A18DB /* sinaweibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 073F7A6F1D37F391007A18DB /* sinaweibo@2x.png */; };
+		073F7A721D37F391007A18DB /* sinaweibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 073F7A6F1D37F391007A18DB /* sinaweibo@2x.png */; };
+		073F7A731D37F391007A18DB /* sinaweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 073F7A701D37F391007A18DB /* sinaweibo.png */; };
+		073F7A741D37F391007A18DB /* sinaweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 073F7A701D37F391007A18DB /* sinaweibo.png */; };
+		076889D41B3BA38500E867F5 /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889D21B3BA38500E867F5 /* AddNewViewController.m */; };
+		076889D51B3BA38500E867F5 /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076889D31B3BA38500E867F5 /* AddNewViewController.xib */; };
+		076889D81B3BCA2F00E867F5 /* MyNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889D71B3BCA2F00E867F5 /* MyNote.m */; };
+		076889E41B3BCDCB00E867F5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889DB1B3BCDCB00E867F5 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		076889E51B3BCDCB00E867F5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889DD1B3BCDCB00E867F5 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		076889E61B3BCDCB00E867F5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889DF1B3BCDCB00E867F5 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		076889E71B3BCDCB00E867F5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889E11B3BCDCB00E867F5 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		076889E81B3BCDCB00E867F5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889E31B3BCDCB00E867F5 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		076889EB1B3BCE1E00E867F5 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EA1B3BCE1E00E867F5 /* FMDBManager.m */; };
+		076889F11B3BE6D800E867F5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EF1B3BE6D800E867F5 /* DetailViewController.m */; };
+		076889F21B3BE6D800E867F5 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076889F01B3BE6D800E867F5 /* DetailViewController.xib */; };
+		078319E51B4BD287006200FE /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 078319E41B4BD287006200FE /* delete@2x.png */; };
+		078D4A7D1D5A3A74000B0FA9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */; };
+		078D4A811D5A3A74000B0FA9 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D4A801D5A3A74000B0FA9 /* TodayViewController.m */; };
+		078D4A841D5A3A74000B0FA9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078D4A821D5A3A74000B0FA9 /* MainInterface.storyboard */; };
+		078D4A881D5A3A74000B0FA9 /* MyNoteBookWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 078D4A7A1D5A3A74000B0FA9 /* MyNoteBookWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		079DA2E21C5E02FD00E48CE2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 079DA2E11C5E02FD00E48CE2 /* Info.plist */; };
+		079DA2E31C5E5BFC00E48CE2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F017AC1C5DE47A004EF687 /* libsqlite3.tbd */; };
+		07BD2E361C51062D003D672A /* LocalRemind.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BD2E351C51062D003D672A /* LocalRemind.m */; };
+		07BD2E371C51062D003D672A /* LocalRemind.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BD2E351C51062D003D672A /* LocalRemind.m */; };
+		07EB18891BFEF58900D9973E /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB18881BFEF58900D9973E /* MyNavController.m */; };
+		07EB188A1BFEF58900D9973E /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB18881BFEF58900D9973E /* MyNavController.m */; };
+		07F017AD1C5DE47A004EF687 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F017AC1C5DE47A004EF687 /* libsqlite3.tbd */; };
+		07FE4A491BE0C72B005D513E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F81B3A8EB20036F759 /* ViewController.m */; };
+		07FE4A4A1BE0C72B005D513E /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889D21B3BA38500E867F5 /* AddNewViewController.m */; };
+		07FE4A4B1BE0C72B005D513E /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717991F1B3AA14B0036F759 /* MyCell.m */; };
+		07FE4A4C1BE0C72B005D513E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889DB1B3BCDCB00E867F5 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07FE4A4D1BE0C72B005D513E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889DF1B3BCDCB00E867F5 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07FE4A4E1BE0C72B005D513E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889E11B3BCDCB00E867F5 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07FE4A4F1BE0C72B005D513E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F51B3A8EB20036F759 /* AppDelegate.m */; };
+		07FE4A501BE0C72B005D513E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F21B3A8EB20036F759 /* main.m */; };
+		07FE4A511BE0C72B005D513E /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EA1B3BCE1E00E867F5 /* FMDBManager.m */; };
+		07FE4A521BE0C72B005D513E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EF1B3BE6D800E867F5 /* DetailViewController.m */; };
+		07FE4A531BE0C72B005D513E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889E31B3BCDCB00E867F5 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07FE4A541BE0C72B005D513E /* MyNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889D71B3BCA2F00E867F5 /* MyNote.m */; };
+		07FE4A551BE0C72B005D513E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889DD1B3BCDCB00E867F5 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07FE4A591BE0C72B005D513E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071798FA1B3A8EB20036F759 /* Main.storyboard */; };
+		07FE4A5A1BE0C72B005D513E /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 078319E41B4BD287006200FE /* delete@2x.png */; };
+		07FE4A5B1BE0C72B005D513E /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 0717991B1B3A93030036F759 /* note.png */; };
+		07FE4A5C1BE0C72B005D513E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076889F01B3BE6D800E867F5 /* DetailViewController.xib */; };
+		07FE4A5D1BE0C72B005D513E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071798FF1B3A8EB20036F759 /* LaunchScreen.xib */; };
+		07FE4A5E1BE0C72B005D513E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071798FD1B3A8EB20036F759 /* Images.xcassets */; };
+		07FE4A601BE0C72B005D513E /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071799201B3AA14B0036F759 /* MyCell.xib */; };
+		07FE4A621BE0C72B005D513E /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076889D31B3BA38500E867F5 /* AddNewViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		071799071B3A8EB20036F759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071798E51B3A8EB20036F759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071798EC1B3A8EB20036F759;
+			remoteInfo = MyNoteBook;
+		};
+		078D4A861D5A3A74000B0FA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071798E51B3A8EB20036F759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078D4A791D5A3A74000B0FA9;
+			remoteInfo = MyNoteBookWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		078D4A8C1D5A3A74000B0FA9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				078D4A881D5A3A74000B0FA9 /* MyNoteBookWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0710682A1D58F02800D5B93B /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		0710682B1D58F02800D5B93B /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		0710682C1D58F02800D5B93B /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
+		071068341D58F28600D5B93B /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		071798ED1B3A8EB20036F759 /* MyNoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		071798F11B3A8EB20036F759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071798F21B3A8EB20036F759 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		071798F41B3A8EB20036F759 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		071798F51B3A8EB20036F759 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		071798F71B3A8EB20036F759 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		071798F81B3A8EB20036F759 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		071798FB1B3A8EB20036F759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		071798FD1B3A8EB20036F759 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		071799001B3A8EB20036F759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0717990C1B3A8EB20036F759 /* MyNoteBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNoteBookTests.m; sourceTree = "<group>"; };
+		0717991B1B3A93030036F759 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		0717991E1B3AA14B0036F759 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		0717991F1B3AA14B0036F759 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		071799201B3AA14B0036F759 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		071A33631CE1E0EE0077D671 /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDK.framework; sourceTree = "<group>"; };
+		071A33661CE1E0EE0077D671 /* ShareSDKExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKExtension.framework; sourceTree = "<group>"; };
+		071A33671CE1E0EE0077D671 /* ShareSDKInterfaceAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKInterfaceAdapter.framework; sourceTree = "<group>"; };
+		071A33681CE1E0EE0077D671 /* ShareSDKUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKUI.bundle; sourceTree = "<group>"; };
+		071A33691CE1E0EE0077D671 /* ShareSDKUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKUI.framework; sourceTree = "<group>"; };
+		071A33751CE1E0EE0077D671 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		071A33761CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		071A337B1CE1E0EE0077D671 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		071A337C1CE1E0EE0077D671 /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		071A337D1CE1E0EE0077D671 /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		071A337E1CE1E0EE0077D671 /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		071A337F1CE1E0EE0077D671 /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		071A33801CE1E0EE0077D671 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		071A33811CE1E0EE0077D671 /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
+		071A33821CE1E0EE0077D671 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
+		071A33831CE1E0EE0077D671 /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		071A33841CE1E0EE0077D671 /* WeiboSDK+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeiboSDK+Statistics.h"; sourceTree = "<group>"; };
+		071A33851CE1E0EE0077D671 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		071A33861CE1E0EE0077D671 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		071A33871CE1E0EE0077D671 /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		071A33891CE1E0EE0077D671 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		071A338A1CE1E0EE0077D671 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		071A338B1CE1E0EE0077D671 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		071A338C1CE1E0EE0077D671 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		071A338D1CE1E0EE0077D671 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		071A33931CE1E0EE0077D671 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		071A33941CE1E0EE0077D671 /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDK.bundle; sourceTree = "<group>"; };
+		071A33951CE1E0EE0077D671 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
+		071A33C01CE1E1EB0077D671 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		071A33C21CE1E1F30077D671 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		071A33C41CE1E2000077D671 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		071A33C61CE1E2080077D671 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		071A33C81CE1E2200077D671 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		071A33CA1CE1E2300077D671 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		073DB46F1DC0F6E0002421FE /* MyNoteBookWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBookWidget.entitlements; sourceTree = "<group>"; };
+		073F7A6F1D37F391007A18DB /* sinaweibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sinaweibo@2x.png"; sourceTree = "<group>"; };
+		073F7A701D37F391007A18DB /* sinaweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinaweibo.png; sourceTree = "<group>"; };
+		0746E7E61DB9077B00298D24 /* MyNoteBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBook.entitlements; sourceTree = "<group>"; };
+		0746E7E71DB9079400298D24 /* MyNoteBookTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBookTest.entitlements; sourceTree = "<group>"; };
+		076889D11B3BA38500E867F5 /* AddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewViewController.h; sourceTree = "<group>"; };
+		076889D21B3BA38500E867F5 /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
+		076889D31B3BA38500E867F5 /* AddNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
+		076889D61B3BCA2F00E867F5 /* MyNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNote.h; sourceTree = "<group>"; };
+		076889D71B3BCA2F00E867F5 /* MyNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNote.m; sourceTree = "<group>"; };
+		076889DA1B3BCDCB00E867F5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		076889DB1B3BCDCB00E867F5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		076889DC1B3BCDCB00E867F5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		076889DD1B3BCDCB00E867F5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		076889DE1B3BCDCB00E867F5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		076889DF1B3BCDCB00E867F5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		076889E01B3BCDCB00E867F5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		076889E11B3BCDCB00E867F5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		076889E21B3BCDCB00E867F5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		076889E31B3BCDCB00E867F5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		076889E91B3BCE1E00E867F5 /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		076889EA1B3BCE1E00E867F5 /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		076889EE1B3BE6D800E867F5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		076889EF1B3BE6D800E867F5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		076889F01B3BE6D800E867F5 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		078319E41B4BD287006200FE /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		078D4A7A1D5A3A74000B0FA9 /* MyNoteBookWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNoteBookWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		078D4A7F1D5A3A74000B0FA9 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		078D4A801D5A3A74000B0FA9 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		078D4A831D5A3A74000B0FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		078D4A851D5A3A74000B0FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079DA2E11C5E02FD00E48CE2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07BD2E341C51062D003D672A /* LocalRemind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalRemind.h; sourceTree = "<group>"; };
+		07BD2E351C51062D003D672A /* LocalRemind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalRemind.m; sourceTree = "<group>"; };
+		07C7BF5E1BE9E27C009E0DD7 /* MyNoteBookTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyNoteBookTest.plist; sourceTree = "<group>"; };
+		07EB18871BFEF58900D9973E /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
+		07EB18881BFEF58900D9973E /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
+		07F017AC1C5DE47A004EF687 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		07FE4A661BE0C72B005D513E /* MyNoteBookTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNoteBookTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		071798EA1B3A8EB20036F759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				072EE2381D478F530056C9D8 /* libicucore.tbd in Frameworks */,
+				072EE2371D478DA00056C9D8 /* libz.tbd in Frameworks */,
+				072EE2361D478D730056C9D8 /* libstdc++.tbd in Frameworks */,
+				072EE2351D478D450056C9D8 /* JavaScriptCore.framework in Frameworks */,
+				072EE2341D478D430056C9D8 /* ImageIO.framework in Frameworks */,
+				072EE2331D478D410056C9D8 /* AdSupport.framework in Frameworks */,
+				071A339E1CE1E0EE0077D671 /* ShareSDKUI.framework in Frameworks */,
+				071A33B01CE1E0EE0077D671 /* libWeiboSDK.a in Frameworks */,
+				071A33B41CE1E0EE0077D671 /* libWeChatSDK.a in Frameworks */,
+				071A33A81CE1E0EE0077D671 /* TencentOpenAPI.framework in Frameworks */,
+				079DA2E31C5E5BFC00E48CE2 /* libsqlite3.tbd in Frameworks */,
+				071A33BA1CE1E0EE0077D671 /* MOBFoundation.framework in Frameworks */,
+				071A33BE1CE1E0EE0077D671 /* ShareSDKConnector.framework in Frameworks */,
+				071A339A1CE1E0EE0077D671 /* ShareSDKInterfaceAdapter.framework in Frameworks */,
+				071A33961CE1E0EE0077D671 /* ShareSDK.framework in Frameworks */,
+				071A33981CE1E0EE0077D671 /* ShareSDKExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071799031B3A8EB20036F759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078D4A771D5A3A74000B0FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078D4A7D1D5A3A74000B0FA9 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FE4A561BE0C72B005D513E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A33CB1CE1E2300077D671 /* AdSupport.framework in Frameworks */,
+				07F017AD1C5DE47A004EF687 /* libsqlite3.tbd in Frameworks */,
+				071A33C91CE1E2200077D671 /* ImageIO.framework in Frameworks */,
+				071A33C71CE1E2080077D671 /* JavaScriptCore.framework in Frameworks */,
+				071A33C51CE1E2000077D671 /* libstdc++.tbd in Frameworks */,
+				071A33C31CE1E1F30077D671 /* libz.tbd in Frameworks */,
+				071A33C11CE1E1EB0077D671 /* libicucore.tbd in Frameworks */,
+				071A339F1CE1E0EE0077D671 /* ShareSDKUI.framework in Frameworks */,
+				071A33B11CE1E0EE0077D671 /* libWeiboSDK.a in Frameworks */,
+				071A33B51CE1E0EE0077D671 /* libWeChatSDK.a in Frameworks */,
+				071A33A91CE1E0EE0077D671 /* TencentOpenAPI.framework in Frameworks */,
+				071A33BB1CE1E0EE0077D671 /* MOBFoundation.framework in Frameworks */,
+				071A33BF1CE1E0EE0077D671 /* ShareSDKConnector.framework in Frameworks */,
+				071A339B1CE1E0EE0077D671 /* ShareSDKInterfaceAdapter.framework in Frameworks */,
+				071A33971CE1E0EE0077D671 /* ShareSDK.framework in Frameworks */,
+				071A33991CE1E0EE0077D671 /* ShareSDKExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071798E41B3A8EB20036F759 = {
+			isa = PBXGroup;
+			children = (
+				0746E7E71DB9079400298D24 /* MyNoteBookTest.entitlements */,
+				071A33CA1CE1E2300077D671 /* AdSupport.framework */,
+				071A33C81CE1E2200077D671 /* ImageIO.framework */,
+				071A33C61CE1E2080077D671 /* JavaScriptCore.framework */,
+				071A33C41CE1E2000077D671 /* libstdc++.tbd */,
+				071A33C21CE1E1F30077D671 /* libz.tbd */,
+				071A33C01CE1E1EB0077D671 /* libicucore.tbd */,
+				071798EF1B3A8EB20036F759 /* MyNoteBook */,
+				071799091B3A8EB20036F759 /* MyNoteBookTests */,
+				078D4A7E1D5A3A74000B0FA9 /* MyNoteBookWidget */,
+				078D4A7B1D5A3A74000B0FA9 /* Frameworks */,
+				071798EE1B3A8EB20036F759 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		071798EE1B3A8EB20036F759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				071798ED1B3A8EB20036F759 /* MyNoteBook.app */,
+				071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */,
+				07FE4A661BE0C72B005D513E /* MyNoteBookTest.app */,
+				078D4A7A1D5A3A74000B0FA9 /* MyNoteBookWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		071798EF1B3A8EB20036F759 /* MyNoteBook */ = {
+			isa = PBXGroup;
+			children = (
+				0746E7E61DB9077B00298D24 /* MyNoteBook.entitlements */,
+				071A33621CE1E0EE0077D671 /* ShareSDK */,
+				0717991A1B3A93030036F759 /* MySources */,
+				071799191B3A93030036F759 /* Model */,
+				0717991C1B3A93030036F759 /* View */,
+				071798F41B3A8EB20036F759 /* AppDelegate.h */,
+				071798F51B3A8EB20036F759 /* AppDelegate.m */,
+				07EB18871BFEF58900D9973E /* MyNavController.h */,
+				07EB18881BFEF58900D9973E /* MyNavController.m */,
+				071798F71B3A8EB20036F759 /* ViewController.h */,
+				071798F81B3A8EB20036F759 /* ViewController.m */,
+				0710682A1D58F02800D5B93B /* UserInfoViewController.h */,
+				0710682B1D58F02800D5B93B /* UserInfoViewController.m */,
+				0710682C1D58F02800D5B93B /* UserInfoViewController.xib */,
+				076889D11B3BA38500E867F5 /* AddNewViewController.h */,
+				076889D21B3BA38500E867F5 /* AddNewViewController.m */,
+				076889D31B3BA38500E867F5 /* AddNewViewController.xib */,
+				076889EE1B3BE6D800E867F5 /* DetailViewController.h */,
+				076889EF1B3BE6D800E867F5 /* DetailViewController.m */,
+				076889F01B3BE6D800E867F5 /* DetailViewController.xib */,
+				071798FA1B3A8EB20036F759 /* Main.storyboard */,
+				071798FD1B3A8EB20036F759 /* Images.xcassets */,
+				071798FF1B3A8EB20036F759 /* LaunchScreen.xib */,
+				071798F01B3A8EB20036F759 /* Supporting Files */,
+			);
+			path = MyNoteBook;
+			sourceTree = "<group>";
+		};
+		071798F01B3A8EB20036F759 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07F017AC1C5DE47A004EF687 /* libsqlite3.tbd */,
+				07C7BF5E1BE9E27C009E0DD7 /* MyNoteBookTest.plist */,
+				071798F11B3A8EB20036F759 /* Info.plist */,
+				071798F21B3A8EB20036F759 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		071799091B3A8EB20036F759 /* MyNoteBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				0717990C1B3A8EB20036F759 /* MyNoteBookTests.m */,
+				0717990A1B3A8EB20036F759 /* Supporting Files */,
+			);
+			path = MyNoteBookTests;
+			sourceTree = "<group>";
+		};
+		0717990A1B3A8EB20036F759 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				079DA2E11C5E02FD00E48CE2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		071799191B3A93030036F759 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				076889D61B3BCA2F00E867F5 /* MyNote.h */,
+				076889D71B3BCA2F00E867F5 /* MyNote.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0717991A1B3A93030036F759 /* MySources */ = {
+			isa = PBXGroup;
+			children = (
+				071068341D58F28600D5B93B /* AppIcon.png */,
+				073F7A6F1D37F391007A18DB /* sinaweibo@2x.png */,
+				073F7A701D37F391007A18DB /* sinaweibo.png */,
+				0717991B1B3A93030036F759 /* note.png */,
+				078319E41B4BD287006200FE /* delete@2x.png */,
+				076889D91B3BCDCB00E867F5 /* fmdb */,
+				076889E91B3BCE1E00E867F5 /* FMDBManager.h */,
+				076889EA1B3BCE1E00E867F5 /* FMDBManager.m */,
+				07BD2E341C51062D003D672A /* LocalRemind.h */,
+				07BD2E351C51062D003D672A /* LocalRemind.m */,
+			);
+			path = MySources;
+			sourceTree = "<group>";
+		};
+		0717991C1B3A93030036F759 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0717991E1B3AA14B0036F759 /* MyCell.h */,
+				0717991F1B3AA14B0036F759 /* MyCell.m */,
+				071799201B3AA14B0036F759 /* MyCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		071A33621CE1E0EE0077D671 /* ShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				071A33631CE1E0EE0077D671 /* ShareSDK.framework */,
+				071A33641CE1E0EE0077D671 /* Support */,
+			);
+			path = ShareSDK;
+			sourceTree = "<group>";
+		};
+		071A33641CE1E0EE0077D671 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				071A33651CE1E0EE0077D671 /* Optional */,
+				071A336A1CE1E0EE0077D671 /* PlatformSDK */,
+				071A33921CE1E0EE0077D671 /* Required */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		071A33651CE1E0EE0077D671 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				071A33661CE1E0EE0077D671 /* ShareSDKExtension.framework */,
+				071A33671CE1E0EE0077D671 /* ShareSDKInterfaceAdapter.framework */,
+				071A33681CE1E0EE0077D671 /* ShareSDKUI.bundle */,
+				071A33691CE1E0EE0077D671 /* ShareSDKUI.framework */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
+		071A336A1CE1E0EE0077D671 /* PlatformSDK */ = {
+			isa = PBXGroup;
+			children = (
+				071A33741CE1E0EE0077D671 /* QQSDK */,
+				071A337A1CE1E0EE0077D671 /* SinaWeiboSDK */,
+				071A33881CE1E0EE0077D671 /* WeChatSDK */,
+			);
+			path = PlatformSDK;
+			sourceTree = "<group>";
+		};
+		071A33741CE1E0EE0077D671 /* QQSDK */ = {
+			isa = PBXGroup;
+			children = (
+				071A33751CE1E0EE0077D671 /* TencentOpenAPI.framework */,
+				071A33761CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			path = QQSDK;
+			sourceTree = "<group>";
+		};
+		071A337A1CE1E0EE0077D671 /* SinaWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				071A337B1CE1E0EE0077D671 /* libWeiboSDK.a */,
+				071A337C1CE1E0EE0077D671 /* WBHttpRequest+WeiboGame.h */,
+				071A337D1CE1E0EE0077D671 /* WBHttpRequest+WeiboShare.h */,
+				071A337E1CE1E0EE0077D671 /* WBHttpRequest+WeiboToken.h */,
+				071A337F1CE1E0EE0077D671 /* WBHttpRequest+WeiboUser.h */,
+				071A33801CE1E0EE0077D671 /* WBHttpRequest.h */,
+				071A33811CE1E0EE0077D671 /* WBSDKBasicButton.h */,
+				071A33821CE1E0EE0077D671 /* WBSDKCommentButton.h */,
+				071A33831CE1E0EE0077D671 /* WBSDKRelationshipButton.h */,
+				071A33841CE1E0EE0077D671 /* WeiboSDK+Statistics.h */,
+				071A33851CE1E0EE0077D671 /* WeiboSDK.bundle */,
+				071A33861CE1E0EE0077D671 /* WeiboSDK.h */,
+				071A33871CE1E0EE0077D671 /* WeiboUser.h */,
+			);
+			path = SinaWeiboSDK;
+			sourceTree = "<group>";
+		};
+		071A33881CE1E0EE0077D671 /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				071A33891CE1E0EE0077D671 /* libWeChatSDK.a */,
+				071A338A1CE1E0EE0077D671 /* read_me.txt */,
+				071A338B1CE1E0EE0077D671 /* WechatAuthSDK.h */,
+				071A338C1CE1E0EE0077D671 /* WXApi.h */,
+				071A338D1CE1E0EE0077D671 /* WXApiObject.h */,
+			);
+			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+		071A33921CE1E0EE0077D671 /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				071A33931CE1E0EE0077D671 /* MOBFoundation.framework */,
+				071A33941CE1E0EE0077D671 /* ShareSDK.bundle */,
+				071A33951CE1E0EE0077D671 /* ShareSDKConnector.framework */,
+			);
+			path = Required;
+			sourceTree = "<group>";
+		};
+		076889D91B3BCDCB00E867F5 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				076889DA1B3BCDCB00E867F5 /* FMDatabase.h */,
+				076889DB1B3BCDCB00E867F5 /* FMDatabase.m */,
+				076889DC1B3BCDCB00E867F5 /* FMDatabaseAdditions.h */,
+				076889DD1B3BCDCB00E867F5 /* FMDatabaseAdditions.m */,
+				076889DE1B3BCDCB00E867F5 /* FMDatabasePool.h */,
+				076889DF1B3BCDCB00E867F5 /* FMDatabasePool.m */,
+				076889E01B3BCDCB00E867F5 /* FMDatabaseQueue.h */,
+				076889E11B3BCDCB00E867F5 /* FMDatabaseQueue.m */,
+				076889E21B3BCDCB00E867F5 /* FMResultSet.h */,
+				076889E31B3BCDCB00E867F5 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		078D4A7B1D5A3A74000B0FA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		078D4A7E1D5A3A74000B0FA9 /* MyNoteBookWidget */ = {
+			isa = PBXGroup;
+			children = (
+				073DB46F1DC0F6E0002421FE /* MyNoteBookWidget.entitlements */,
+				078D4A7F1D5A3A74000B0FA9 /* TodayViewController.h */,
+				078D4A801D5A3A74000B0FA9 /* TodayViewController.m */,
+				078D4A821D5A3A74000B0FA9 /* MainInterface.storyboard */,
+				078D4A851D5A3A74000B0FA9 /* Info.plist */,
+			);
+			path = MyNoteBookWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		071798EC1B3A8EB20036F759 /* MyNoteBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071799101B3A8EB20036F759 /* Build configuration list for PBXNativeTarget "MyNoteBook" */;
+			buildPhases = (
+				071798E91B3A8EB20036F759 /* Sources */,
+				071798EA1B3A8EB20036F759 /* Frameworks */,
+				071798EB1B3A8EB20036F759 /* Resources */,
+				078D4A8C1D5A3A74000B0FA9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078D4A871D5A3A74000B0FA9 /* PBXTargetDependency */,
+			);
+			name = MyNoteBook;
+			productName = MyNoteBook;
+			productReference = 071798ED1B3A8EB20036F759 /* MyNoteBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		071799051B3A8EB20036F759 /* MyNoteBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071799131B3A8EB20036F759 /* Build configuration list for PBXNativeTarget "MyNoteBookTests" */;
+			buildPhases = (
+				071799021B3A8EB20036F759 /* Sources */,
+				071799031B3A8EB20036F759 /* Frameworks */,
+				071799041B3A8EB20036F759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071799081B3A8EB20036F759 /* PBXTargetDependency */,
+			);
+			name = MyNoteBookTests;
+			productName = MyNoteBookTests;
+			productReference = 071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		078D4A791D5A3A74000B0FA9 /* MyNoteBookWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078D4A891D5A3A74000B0FA9 /* Build configuration list for PBXNativeTarget "MyNoteBookWidget" */;
+			buildPhases = (
+				078D4A761D5A3A74000B0FA9 /* Sources */,
+				078D4A771D5A3A74000B0FA9 /* Frameworks */,
+				078D4A781D5A3A74000B0FA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNoteBookWidget;
+			productName = MyNoteBookWidget;
+			productReference = 078D4A7A1D5A3A74000B0FA9 /* MyNoteBookWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		07FE4A471BE0C72B005D513E /* MyNoteBookTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FE4A631BE0C72B005D513E /* Build configuration list for PBXNativeTarget "MyNoteBookTest" */;
+			buildPhases = (
+				07FE4A481BE0C72B005D513E /* Sources */,
+				07FE4A561BE0C72B005D513E /* Frameworks */,
+				07FE4A581BE0C72B005D513E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNoteBookTest;
+			productName = MyNoteBook;
+			productReference = 07FE4A661BE0C72B005D513E /* MyNoteBookTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		071798E51B3A8EB20036F759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "314420972@qq.com";
+				TargetAttributes = {
+					071798EC1B3A8EB20036F759 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Z549QNKM6P;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					071799051B3A8EB20036F759 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Z549QNKM6P;
+						ProvisioningStyle = Manual;
+						TestTargetID = 071798EC1B3A8EB20036F759;
+					};
+					078D4A791D5A3A74000B0FA9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Z549QNKM6P;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					07FE4A471BE0C72B005D513E = {
+						DevelopmentTeam = Z549QNKM6P;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 071798E81B3A8EB20036F759 /* Build configuration list for PBXProject "MyNoteBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 071798E41B3A8EB20036F759;
+			productRefGroup = 071798EE1B3A8EB20036F759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				071798EC1B3A8EB20036F759 /* MyNoteBook */,
+				07FE4A471BE0C72B005D513E /* MyNoteBookTest */,
+				071799051B3A8EB20036F759 /* MyNoteBookTests */,
+				078D4A791D5A3A74000B0FA9 /* MyNoteBookWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		071798EB1B3A8EB20036F759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071798FC1B3A8EB20036F759 /* Main.storyboard in Resources */,
+				073F7A731D37F391007A18DB /* sinaweibo.png in Resources */,
+				071A33BC1CE1E0EE0077D671 /* ShareSDK.bundle in Resources */,
+				078319E51B4BD287006200FE /* delete@2x.png in Resources */,
+				071A339C1CE1E0EE0077D671 /* ShareSDKUI.bundle in Resources */,
+				0710682F1D58F02800D5B93B /* UserInfoViewController.xib in Resources */,
+				073F7A711D37F391007A18DB /* sinaweibo@2x.png in Resources */,
+				0717991D1B3A93030036F759 /* note.png in Resources */,
+				076889F21B3BE6D800E867F5 /* DetailViewController.xib in Resources */,
+				071799011B3A8EB20036F759 /* LaunchScreen.xib in Resources */,
+				071A33B61CE1E0EE0077D671 /* read_me.txt in Resources */,
+				071798FE1B3A8EB20036F759 /* Images.xcassets in Resources */,
+				071A33AA1CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				071A33B21CE1E0EE0077D671 /* WeiboSDK.bundle in Resources */,
+				071799221B3AA14B0036F759 /* MyCell.xib in Resources */,
+				071068351D58F28600D5B93B /* AppIcon.png in Resources */,
+				076889D51B3BA38500E867F5 /* AddNewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071799041B3A8EB20036F759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079DA2E21C5E02FD00E48CE2 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078D4A781D5A3A74000B0FA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078D4A841D5A3A74000B0FA9 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FE4A581BE0C72B005D513E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FE4A591BE0C72B005D513E /* Main.storyboard in Resources */,
+				07FE4A5A1BE0C72B005D513E /* delete@2x.png in Resources */,
+				07FE4A5B1BE0C72B005D513E /* note.png in Resources */,
+				07FE4A5C1BE0C72B005D513E /* DetailViewController.xib in Resources */,
+				07FE4A5D1BE0C72B005D513E /* LaunchScreen.xib in Resources */,
+				071068301D58F02800D5B93B /* UserInfoViewController.xib in Resources */,
+				07FE4A5E1BE0C72B005D513E /* Images.xcassets in Resources */,
+				073F7A721D37F391007A18DB /* sinaweibo@2x.png in Resources */,
+				071A33B71CE1E0EE0077D671 /* read_me.txt in Resources */,
+				07FE4A601BE0C72B005D513E /* MyCell.xib in Resources */,
+				071A339D1CE1E0EE0077D671 /* ShareSDKUI.bundle in Resources */,
+				071A33BD1CE1E0EE0077D671 /* ShareSDK.bundle in Resources */,
+				071A33AB1CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				07FE4A621BE0C72B005D513E /* AddNewViewController.xib in Resources */,
+				073F7A741D37F391007A18DB /* sinaweibo.png in Resources */,
+				071068361D58F28600D5B93B /* AppIcon.png in Resources */,
+				071A33B31CE1E0EE0077D671 /* WeiboSDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		071798E91B3A8EB20036F759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071798F91B3A8EB20036F759 /* ViewController.m in Sources */,
+				076889D41B3BA38500E867F5 /* AddNewViewController.m in Sources */,
+				071799211B3AA14B0036F759 /* MyCell.m in Sources */,
+				076889E41B3BCDCB00E867F5 /* FMDatabase.m in Sources */,
+				07BD2E361C51062D003D672A /* LocalRemind.m in Sources */,
+				076889E61B3BCDCB00E867F5 /* FMDatabasePool.m in Sources */,
+				076889E71B3BCDCB00E867F5 /* FMDatabaseQueue.m in Sources */,
+				071798F61B3A8EB20036F759 /* AppDelegate.m in Sources */,
+				071798F31B3A8EB20036F759 /* main.m in Sources */,
+				076889EB1B3BCE1E00E867F5 /* FMDBManager.m in Sources */,
+				076889F11B3BE6D800E867F5 /* DetailViewController.m in Sources */,
+				076889E81B3BCDCB00E867F5 /* FMResultSet.m in Sources */,
+				076889D81B3BCA2F00E867F5 /* MyNote.m in Sources */,
+				0710682D1D58F02800D5B93B /* UserInfoViewController.m in Sources */,
+				07EB18891BFEF58900D9973E /* MyNavController.m in Sources */,
+				076889E51B3BCDCB00E867F5 /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071799021B3A8EB20036F759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0717990D1B3A8EB20036F759 /* MyNoteBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078D4A761D5A3A74000B0FA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078D4A811D5A3A74000B0FA9 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FE4A481BE0C72B005D513E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FE4A491BE0C72B005D513E /* ViewController.m in Sources */,
+				07FE4A4A1BE0C72B005D513E /* AddNewViewController.m in Sources */,
+				07FE4A4B1BE0C72B005D513E /* MyCell.m in Sources */,
+				07FE4A4C1BE0C72B005D513E /* FMDatabase.m in Sources */,
+				07BD2E371C51062D003D672A /* LocalRemind.m in Sources */,
+				07FE4A4D1BE0C72B005D513E /* FMDatabasePool.m in Sources */,
+				07FE4A4E1BE0C72B005D513E /* FMDatabaseQueue.m in Sources */,
+				07FE4A4F1BE0C72B005D513E /* AppDelegate.m in Sources */,
+				07FE4A501BE0C72B005D513E /* main.m in Sources */,
+				07FE4A511BE0C72B005D513E /* FMDBManager.m in Sources */,
+				07FE4A521BE0C72B005D513E /* DetailViewController.m in Sources */,
+				07FE4A531BE0C72B005D513E /* FMResultSet.m in Sources */,
+				07FE4A541BE0C72B005D513E /* MyNote.m in Sources */,
+				0710682E1D58F02800D5B93B /* UserInfoViewController.m in Sources */,
+				07EB188A1BFEF58900D9973E /* MyNavController.m in Sources */,
+				07FE4A551BE0C72B005D513E /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071799081B3A8EB20036F759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071798EC1B3A8EB20036F759 /* MyNoteBook */;
+			targetProxy = 071799071B3A8EB20036F759 /* PBXContainerItemProxy */;
+		};
+		078D4A871D5A3A74000B0FA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078D4A791D5A3A74000B0FA9 /* MyNoteBookWidget */;
+			targetProxy = 078D4A861D5A3A74000B0FA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		071798FA1B3A8EB20036F759 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071798FB1B3A8EB20036F759 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		071798FF1B3A8EB20036F759 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071799001B3A8EB20036F759 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		078D4A821D5A3A74000B0FA9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				078D4A831D5A3A74000B0FA9 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0717990E1B3A8EB20036F759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Li (2J2XLR8Q56)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chao Li (2J2XLR8Q56)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "4fdefbaa-78e4-4194-a715-180d31808509";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0717990F1B3A8EB20036F759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "4fdefbaa-78e4-4194-a715-180d31808509";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071799111B3A8EB20036F759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MyNoteBook.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
+				DEVELOPMENT_TEAM = Z549QNKM6P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/KaKaoSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/RenRenSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/Required",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG_MYNOTEBOOK;
+				INFOPLIST_FILE = MyNoteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/APSocialSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/YiXinSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b4ab48df-dd0b-4aeb-8e47-9b65cddad9ba";
+				PROVISIONING_PROFILE_SPECIFIER = RiberNoteBook;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		071799121B3A8EB20036F759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MyNoteBook.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: HangZhou Youdiao Technology Co.,Ltd. (Z549QNKM6P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: HangZhou Youdiao Technology Co.,Ltd. (Z549QNKM6P)";
+				DEVELOPMENT_TEAM = Z549QNKM6P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/KaKaoSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/RenRenSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/Required",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG_MYNOTEBOOK;
+				INFOPLIST_FILE = MyNoteBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/APSocialSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/YiXinSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "69e04c5b-1a29-43ec-88c9-dc6a2d277021";
+				PROVISIONING_PROFILE_SPECIFIER = RiberNoteBook_Dis;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		071799141B3A8EB20036F759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Li (2J2XLR8Q56)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z549QNKM6P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyNoteBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyNoteBook.app/MyNoteBook";
+			};
+			name = Debug;
+		};
+		071799151B3A8EB20036F759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Industry Illusion(Shanghai) Digital Technology Co., Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z549QNKM6P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyNoteBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyNoteBook.app/MyNoteBook";
+			};
+			name = Release;
+		};
+		078D4A8A1D5A3A74000B0FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBookWidget/MyNoteBookWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Z549QNKM6P;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = MyNoteBookWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book.today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		078D4A8B1D5A3A74000B0FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBookWidget/MyNoteBookWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z549QNKM6P;
+				INFOPLIST_FILE = MyNoteBookWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book.today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		07FE4A641BE0C72B005D513E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBookTest.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
+				DEVELOPMENT_TEAM = Z549QNKM6P;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/KaKaoSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/RenRenSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/Required",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG_MYNOTEBOOKTEST;
+				INFOPLIST_FILE = "$(SRCROOT)/MyNoteBook/MyNoteBookTest.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				KEEP_PRIVATE_EXTERNS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/APSocialSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/YiXinSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = MyNoteBookTest.app/PrivateHeaders;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book;
+				PRODUCT_NAME = MyNoteBookTest;
+				PROVISIONING_PROFILE = "b4ab48df-dd0b-4aeb-8e47-9b65cddad9ba";
+				PROVISIONING_PROFILE_SPECIFIER = RiberNoteBook;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		07FE4A651BE0C72B005D513E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBookTest.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
+				DEVELOPMENT_TEAM = Z549QNKM6P;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/KaKaoSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/RenRenSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/Required",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG_MYNOTEBOOKTEST;
+				INFOPLIST_FILE = "$(SRCROOT)/MyNoteBook/MyNoteBookTest.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				KEEP_PRIVATE_EXTERNS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/APSocialSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/YiXinSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = MyNoteBookTest.app/PrivateHeaders;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book;
+				PRODUCT_NAME = MyNoteBookTest;
+				PROVISIONING_PROFILE = "b4ab48df-dd0b-4aeb-8e47-9b65cddad9ba";
+				PROVISIONING_PROFILE_SPECIFIER = RiberNoteBook;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		071798E81B3A8EB20036F759 /* Build configuration list for PBXProject "MyNoteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0717990E1B3A8EB20036F759 /* Debug */,
+				0717990F1B3A8EB20036F759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071799101B3A8EB20036F759 /* Build configuration list for PBXNativeTarget "MyNoteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071799111B3A8EB20036F759 /* Debug */,
+				071799121B3A8EB20036F759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071799131B3A8EB20036F759 /* Build configuration list for PBXNativeTarget "MyNoteBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071799141B3A8EB20036F759 /* Debug */,
+				071799151B3A8EB20036F759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078D4A891D5A3A74000B0FA9 /* Build configuration list for PBXNativeTarget "MyNoteBookWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078D4A8A1D5A3A74000B0FA9 /* Debug */,
+				078D4A8B1D5A3A74000B0FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07FE4A631BE0C72B005D513E /* Build configuration list for PBXNativeTarget "MyNoteBookTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FE4A641BE0C72B005D513E /* Debug */,
+				07FE4A651BE0C72B005D513E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 071798E51B3A8EB20036F759 /* Project object */;
+}

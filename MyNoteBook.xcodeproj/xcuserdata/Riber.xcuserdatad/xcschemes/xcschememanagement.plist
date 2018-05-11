@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MyNoteBook.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>MyNoteBookTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MyNoteBookWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>071798EC1B3A8EB20036F759</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>071799051B3A8EB20036F759</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>078D4A791D5A3A74000B0FA9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07FE4A471BE0C72B005D513E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07FE4A6B1BE0C765005D513E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07FE4A831BE0C765005D513E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

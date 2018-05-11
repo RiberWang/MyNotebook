@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewViewController">
+            <connections>
+                <outlet property="constraintBottom" destination="qBq-OB-dx2" id="dZ6-q6-8Ga"/>
+                <outlet property="constraintLeft" destination="3gt-uW-b9k" id="2dr-Dv-YB1"/>
+                <outlet property="dateLabel" destination="E84-f9-kg8" id="XSs-Wf-P1v"/>
+                <outlet property="textView" destination="9Oc-Py-QC8" id="N3t-H0-kPc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note.png" translatesAutoresizingMaskIntoConstraints="NO" id="iXG-AZ-eS4"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oc-Py-QC8">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fQp-N8-yaY"/>
+                    </connections>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-5-17 20:43:57" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E84-f9-kg8">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="EYW-Kk-hhL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Oc-Py-QC8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="00h-kE-hld"/>
+                <constraint firstItem="iXG-AZ-eS4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Yr-0D-O5A"/>
+                <constraint firstItem="E84-f9-kg8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="111" id="3gt-uW-b9k"/>
+                <constraint firstItem="9Oc-Py-QC8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="8wq-BP-Ah2"/>
+                <constraint firstAttribute="trailing" secondItem="iXG-AZ-eS4" secondAttribute="trailing" id="O6s-Ou-uRW"/>
+                <constraint firstAttribute="trailing" secondItem="9Oc-Py-QC8" secondAttribute="trailing" constant="70" id="Ril-F8-WVd"/>
+                <constraint firstAttribute="bottom" secondItem="iXG-AZ-eS4" secondAttribute="bottom" id="UcA-lc-GHN"/>
+                <constraint firstAttribute="bottom" secondItem="9Oc-Py-QC8" secondAttribute="bottom" constant="197" id="iDX-EP-5PZ"/>
+                <constraint firstItem="iXG-AZ-eS4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kYN-ep-Qyy"/>
+                <constraint firstAttribute="bottom" secondItem="E84-f9-kg8" secondAttribute="bottom" constant="75" id="qBq-OB-dx2"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="202.5" y="173.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="note.png" width="289" height="315"/>
+    </resources>
+</document>

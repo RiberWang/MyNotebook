@@ -1,6 +1,5 @@
 # MyNoteBook 万事本 
-### MyNoteBook 
-一款简单易用的记事本
+### 一款简单易用的记事本
 数据库FMDB的简单实用，涉及数据库的增删改查
 
 ## AppStore下载地址 [下载地址](https://itunes.apple.com/cn/app/万事本/id1057007765?mt=8!)

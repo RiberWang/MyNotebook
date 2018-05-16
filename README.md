@@ -138,5 +138,5 @@
 7.适配打电话 已解决  
 8.处于搜索时 进入详情 返回首页面 点击取消 导航栏编程透明了 （设置导航栏不透明 视图位置全部下移 状态栏无法改变）
 
-### AppStore下载地址 [下载地址](https://itunes.apple.com/cn/app/万事本/id1057007765?mt=8!)
+### [AppStore下载地址](https://itunes.apple.com/cn/app/万事本/id1057007765?mt=8!)
 

@@ -79,10 +79,6 @@
 		076889F11B3BE6D800E867F5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EF1B3BE6D800E867F5 /* DetailViewController.m */; };
 		076889F21B3BE6D800E867F5 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076889F01B3BE6D800E867F5 /* DetailViewController.xib */; };
 		078319E51B4BD287006200FE /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 078319E41B4BD287006200FE /* delete@2x.png */; };
-		078D4A7D1D5A3A74000B0FA9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */; };
-		078D4A811D5A3A74000B0FA9 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D4A801D5A3A74000B0FA9 /* TodayViewController.m */; };
-		078D4A841D5A3A74000B0FA9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078D4A821D5A3A74000B0FA9 /* MainInterface.storyboard */; };
-		078D4A881D5A3A74000B0FA9 /* MyNoteBookWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 078D4A7A1D5A3A74000B0FA9 /* MyNoteBookWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		079DA2E21C5E02FD00E48CE2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 079DA2E11C5E02FD00E48CE2 /* Info.plist */; };
 		079DA2E31C5E5BFC00E48CE2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F017AC1C5DE47A004EF687 /* libsqlite3.tbd */; };
 		07BD2E361C51062D003D672A /* LocalRemind.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BD2E351C51062D003D672A /* LocalRemind.m */; };
@@ -121,13 +117,6 @@
 			remoteGlobalIDString = 071798EC1B3A8EB20036F759;
 			remoteInfo = MyNoteBook;
 		};
-		078D4A861D5A3A74000B0FA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 071798E51B3A8EB20036F759 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 078D4A791D5A3A74000B0FA9;
-			remoteInfo = MyNoteBookWidget;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -137,7 +126,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				078D4A881D5A3A74000B0FA9 /* MyNoteBookWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,11 +187,8 @@
 		071A33C61CE1E2080077D671 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		071A33C81CE1E2200077D671 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		071A33CA1CE1E2300077D671 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		073DB46F1DC0F6E0002421FE /* MyNoteBookWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBookWidget.entitlements; sourceTree = "<group>"; };
 		073F7A6F1D37F391007A18DB /* sinaweibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sinaweibo@2x.png"; sourceTree = "<group>"; };
 		073F7A701D37F391007A18DB /* sinaweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinaweibo.png; sourceTree = "<group>"; };
-		0746E7E61DB9077B00298D24 /* MyNoteBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBook.entitlements; sourceTree = "<group>"; };
-		0746E7E71DB9079400298D24 /* MyNoteBookTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBookTest.entitlements; sourceTree = "<group>"; };
 		076889D11B3BA38500E867F5 /* AddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewViewController.h; sourceTree = "<group>"; };
 		076889D21B3BA38500E867F5 /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
 		076889D31B3BA38500E867F5 /* AddNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
@@ -225,16 +210,13 @@
 		076889EF1B3BE6D800E867F5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		076889F01B3BE6D800E867F5 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		078319E41B4BD287006200FE /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
-		078D4A7A1D5A3A74000B0FA9 /* MyNoteBookWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNoteBookWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		078D4A7F1D5A3A74000B0FA9 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		078D4A801D5A3A74000B0FA9 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		078D4A831D5A3A74000B0FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		078D4A851D5A3A74000B0FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079DA2E11C5E02FD00E48CE2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07BD2E341C51062D003D672A /* LocalRemind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalRemind.h; sourceTree = "<group>"; };
 		07BD2E351C51062D003D672A /* LocalRemind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalRemind.m; sourceTree = "<group>"; };
 		07C7BF5E1BE9E27C009E0DD7 /* MyNoteBookTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyNoteBookTest.plist; sourceTree = "<group>"; };
+		07D27111210579FA00F95DA5 /* MyNoteBookTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBookTest.entitlements; sourceTree = "<group>"; };
+		07D2711221057A2000F95DA5 /* MyNoteBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBook.entitlements; sourceTree = "<group>"; };
 		07EB18871BFEF58900D9973E /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
 		07EB18881BFEF58900D9973E /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
 		07F017AC1C5DE47A004EF687 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -272,14 +254,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		078D4A771D5A3A74000B0FA9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				078D4A7D1D5A3A74000B0FA9 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		07FE4A561BE0C72B005D513E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,7 +283,7 @@
 		071798E41B3A8EB20036F759 = {
 			isa = PBXGroup;
 			children = (
-				0746E7E71DB9079400298D24 /* MyNoteBookTest.entitlements */,
+				07D27111210579FA00F95DA5 /* MyNoteBookTest.entitlements */,
 				071A33CA1CE1E2300077D671 /* AdSupport.framework */,
 				071A33C81CE1E2200077D671 /* ImageIO.framework */,
 				071A33C61CE1E2080077D671 /* JavaScriptCore.framework */,
@@ -318,7 +292,6 @@
 				071A33C01CE1E1EB0077D671 /* libicucore.tbd */,
 				071798EF1B3A8EB20036F759 /* MyNoteBook */,
 				071799091B3A8EB20036F759 /* MyNoteBookTests */,
-				078D4A7E1D5A3A74000B0FA9 /* MyNoteBookWidget */,
 				078D4A7B1D5A3A74000B0FA9 /* Frameworks */,
 				071798EE1B3A8EB20036F759 /* Products */,
 			);
@@ -330,7 +303,6 @@
 				071798ED1B3A8EB20036F759 /* MyNoteBook.app */,
 				071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */,
 				07FE4A661BE0C72B005D513E /* MyNoteBookTest.app */,
-				078D4A7A1D5A3A74000B0FA9 /* MyNoteBookWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,7 +310,7 @@
 		071798EF1B3A8EB20036F759 /* MyNoteBook */ = {
 			isa = PBXGroup;
 			children = (
-				0746E7E61DB9077B00298D24 /* MyNoteBook.entitlements */,
+				07D2711221057A2000F95DA5 /* MyNoteBook.entitlements */,
 				071A33621CE1E0EE0077D671 /* ShareSDK */,
 				0717991A1B3A93030036F759 /* MySources */,
 				071799191B3A93030036F759 /* Model */,
@@ -546,18 +518,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		078D4A7E1D5A3A74000B0FA9 /* MyNoteBookWidget */ = {
-			isa = PBXGroup;
-			children = (
-				073DB46F1DC0F6E0002421FE /* MyNoteBookWidget.entitlements */,
-				078D4A7F1D5A3A74000B0FA9 /* TodayViewController.h */,
-				078D4A801D5A3A74000B0FA9 /* TodayViewController.m */,
-				078D4A821D5A3A74000B0FA9 /* MainInterface.storyboard */,
-				078D4A851D5A3A74000B0FA9 /* Info.plist */,
-			);
-			path = MyNoteBookWidget;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -573,7 +533,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				078D4A871D5A3A74000B0FA9 /* PBXTargetDependency */,
 			);
 			name = MyNoteBook;
 			productName = MyNoteBook;
@@ -597,23 +556,6 @@
 			productName = MyNoteBookTests;
 			productReference = 071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		078D4A791D5A3A74000B0FA9 /* MyNoteBookWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 078D4A891D5A3A74000B0FA9 /* Build configuration list for PBXNativeTarget "MyNoteBookWidget" */;
-			buildPhases = (
-				078D4A761D5A3A74000B0FA9 /* Sources */,
-				078D4A771D5A3A74000B0FA9 /* Frameworks */,
-				078D4A781D5A3A74000B0FA9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MyNoteBookWidget;
-			productName = MyNoteBookWidget;
-			productReference = 078D4A7A1D5A3A74000B0FA9 /* MyNoteBookWidget.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		07FE4A471BE0C72B005D513E /* MyNoteBookTest */ = {
 			isa = PBXNativeTarget;
@@ -643,36 +585,26 @@
 				TargetAttributes = {
 					071798EC1B3A8EB20036F759 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = Z549QNKM6P;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 5JXFMNNBPL;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
 					071799051B3A8EB20036F759 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = Z549QNKM6P;
+						DevelopmentTeam = 5JXFMNNBPL;
 						ProvisioningStyle = Manual;
 						TestTargetID = 071798EC1B3A8EB20036F759;
 					};
-					078D4A791D5A3A74000B0FA9 = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Z549QNKM6P;
+					07FE4A471BE0C72B005D513E = {
+						DevelopmentTeam = 5JXFMNNBPL;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					07FE4A471BE0C72B005D513E = {
-						DevelopmentTeam = Z549QNKM6P;
-						ProvisioningStyle = Manual;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -694,7 +626,6 @@
 				071798EC1B3A8EB20036F759 /* MyNoteBook */,
 				07FE4A471BE0C72B005D513E /* MyNoteBookTest */,
 				071799051B3A8EB20036F759 /* MyNoteBookTests */,
-				078D4A791D5A3A74000B0FA9 /* MyNoteBookWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -729,14 +660,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				079DA2E21C5E02FD00E48CE2 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		078D4A781D5A3A74000B0FA9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				078D4A841D5A3A74000B0FA9 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,14 +721,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		078D4A761D5A3A74000B0FA9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				078D4A811D5A3A74000B0FA9 /* TodayViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		07FE4A481BE0C72B005D513E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -837,11 +752,6 @@
 			target = 071798EC1B3A8EB20036F759 /* MyNoteBook */;
 			targetProxy = 071799071B3A8EB20036F759 /* PBXContainerItemProxy */;
 		};
-		078D4A871D5A3A74000B0FA9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 078D4A791D5A3A74000B0FA9 /* MyNoteBookWidget */;
-			targetProxy = 078D4A861D5A3A74000B0FA9 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -859,14 +769,6 @@
 				071799001B3A8EB20036F759 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		078D4A821D5A3A74000B0FA9 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				078D4A831D5A3A74000B0FA9 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -961,10 +863,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MyNoteBook.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
-				DEVELOPMENT_TEAM = Z549QNKM6P;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JXFMNNBPL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyNoteBook/ShareSDK",
@@ -987,10 +889,10 @@
 					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/YiXinSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riberwang.mynotebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b4ab48df-dd0b-4aeb-8e47-9b65cddad9ba";
-				PROVISIONING_PROFILE_SPECIFIER = RiberNoteBook;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -999,10 +901,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MyNoteBook.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: HangZhou Youdiao Technology Co.,Ltd. (Z549QNKM6P)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: HangZhou Youdiao Technology Co.,Ltd. (Z549QNKM6P)";
-				DEVELOPMENT_TEAM = Z549QNKM6P;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JXFMNNBPL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyNoteBook/ShareSDK",
@@ -1025,10 +927,10 @@
 					"$(PROJECT_DIR)/MyNoteBook/ShareSDK/Support/PlatformSDK/YiXinSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riberwang.mynotebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "69e04c5b-1a29-43ec-88c9-dc6a2d277021";
-				PROVISIONING_PROFILE_SPECIFIER = RiberNoteBook_Dis;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1037,9 +939,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Li (2J2XLR8Q56)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z549QNKM6P;
+				DEVELOPMENT_TEAM = 5JXFMNNBPL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1060,9 +962,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Industry Illusion(Shanghai) Digital Technology Co., Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z549QNKM6P;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 5JXFMNNBPL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1075,54 +977,14 @@
 			};
 			name = Release;
 		};
-		078D4A8A1D5A3A74000B0FA9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CODE_SIGN_ENTITLEMENTS = MyNoteBookWidget/MyNoteBookWidget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = Z549QNKM6P;
-				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = MyNoteBookWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book.today;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		078D4A8B1D5A3A74000B0FA9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CODE_SIGN_ENTITLEMENTS = MyNoteBookWidget/MyNoteBookWidget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Z549QNKM6P;
-				INFOPLIST_FILE = MyNoteBookWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book.today;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		07FE4A641BE0C72B005D513E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyNoteBookTest.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
-				DEVELOPMENT_TEAM = Z549QNKM6P;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JXFMNNBPL;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1148,10 +1010,10 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = MyNoteBookTest.app/PrivateHeaders;
-				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riberwang.mynotebook;
 				PRODUCT_NAME = MyNoteBookTest;
-				PROVISIONING_PROFILE = "b4ab48df-dd0b-4aeb-8e47-9b65cddad9ba";
-				PROVISIONING_PROFILE_SPECIFIER = RiberNoteBook;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7";
 			};
@@ -1161,10 +1023,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyNoteBookTest.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mingsheng Xia (YXLHL8378J)";
-				DEVELOPMENT_TEAM = Z549QNKM6P;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JXFMNNBPL;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1190,10 +1052,10 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = MyNoteBookTest.app/PrivateHeaders;
-				PRODUCT_BUNDLE_IDENTIFIER = com.riber.book;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riberwang.mynotebook;
 				PRODUCT_NAME = MyNoteBookTest;
-				PROVISIONING_PROFILE = "b4ab48df-dd0b-4aeb-8e47-9b65cddad9ba";
-				PROVISIONING_PROFILE_SPECIFIER = RiberNoteBook;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7";
 			};
@@ -1225,15 +1087,6 @@
 			buildConfigurations = (
 				071799141B3A8EB20036F759 /* Debug */,
 				071799151B3A8EB20036F759 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		078D4A891D5A3A74000B0FA9 /* Build configuration list for PBXNativeTarget "MyNoteBookWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				078D4A8A1D5A3A74000B0FA9 /* Debug */,
-				078D4A8B1D5A3A74000B0FA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

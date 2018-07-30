@@ -387,7 +387,7 @@
     //1、创建分享参数（必要）
     NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
     
-    NSArray* imageArray = @[[UIImage imageNamed:@"note.png"]];
+    NSArray* imageArray = @[[UIImage imageNamed:@"newIcon.png"]];
     [shareParams SSDKSetupShareParamsByText:@"我的第一个记事本"
                                      images:imageArray
                                         url:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/wan-shi-ben/id1057007765?mt=8"]

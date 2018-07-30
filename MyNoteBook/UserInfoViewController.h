@@ -10,7 +10,7 @@
 
 
 #ifdef DEBUG_MYNOTEBOOK
-#define AppVersion @"2.0.1"
+#define AppVersion @"2.0.0"
 #define AppName @"万事本"
 #endif
 

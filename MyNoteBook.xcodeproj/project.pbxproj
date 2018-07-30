@@ -11,8 +11,6 @@
 		0710682E1D58F02800D5B93B /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0710682B1D58F02800D5B93B /* UserInfoViewController.m */; };
 		0710682F1D58F02800D5B93B /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0710682C1D58F02800D5B93B /* UserInfoViewController.xib */; };
 		071068301D58F02800D5B93B /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0710682C1D58F02800D5B93B /* UserInfoViewController.xib */; };
-		071068351D58F28600D5B93B /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 071068341D58F28600D5B93B /* AppIcon.png */; };
-		071068361D58F28600D5B93B /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 071068341D58F28600D5B93B /* AppIcon.png */; };
 		071798F31B3A8EB20036F759 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F21B3A8EB20036F759 /* main.m */; };
 		071798F61B3A8EB20036F759 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F51B3A8EB20036F759 /* AppDelegate.m */; };
 		071798F91B3A8EB20036F759 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071798F81B3A8EB20036F759 /* ViewController.m */; };
@@ -81,6 +79,8 @@
 		078319E51B4BD287006200FE /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 078319E41B4BD287006200FE /* delete@2x.png */; };
 		079DA2E21C5E02FD00E48CE2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 079DA2E11C5E02FD00E48CE2 /* Info.plist */; };
 		079DA2E31C5E5BFC00E48CE2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F017AC1C5DE47A004EF687 /* libsqlite3.tbd */; };
+		07AEB8F4210EBE6600CDBE49 /* newIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AEB8F3210EBE6600CDBE49 /* newIcon.png */; };
+		07AEB8F5210EBE6600CDBE49 /* newIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AEB8F3210EBE6600CDBE49 /* newIcon.png */; };
 		07BD2E361C51062D003D672A /* LocalRemind.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BD2E351C51062D003D672A /* LocalRemind.m */; };
 		07BD2E371C51062D003D672A /* LocalRemind.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BD2E351C51062D003D672A /* LocalRemind.m */; };
 		07EB18891BFEF58900D9973E /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB18881BFEF58900D9973E /* MyNavController.m */; };
@@ -136,7 +136,6 @@
 		0710682A1D58F02800D5B93B /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		0710682B1D58F02800D5B93B /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		0710682C1D58F02800D5B93B /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
-		071068341D58F28600D5B93B /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		071798ED1B3A8EB20036F759 /* MyNoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		071798F11B3A8EB20036F759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		071798F21B3A8EB20036F759 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -212,6 +211,7 @@
 		078319E41B4BD287006200FE /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
 		078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		079DA2E11C5E02FD00E48CE2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AEB8F3210EBE6600CDBE49 /* newIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newIcon.png; sourceTree = "<group>"; };
 		07BD2E341C51062D003D672A /* LocalRemind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalRemind.h; sourceTree = "<group>"; };
 		07BD2E351C51062D003D672A /* LocalRemind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalRemind.m; sourceTree = "<group>"; };
 		07C7BF5E1BE9E27C009E0DD7 /* MyNoteBookTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyNoteBookTest.plist; sourceTree = "<group>"; };
@@ -378,7 +378,7 @@
 		0717991A1B3A93030036F759 /* MySources */ = {
 			isa = PBXGroup;
 			children = (
-				071068341D58F28600D5B93B /* AppIcon.png */,
+				07AEB8F3210EBE6600CDBE49 /* newIcon.png */,
 				073F7A6F1D37F391007A18DB /* sinaweibo@2x.png */,
 				073F7A701D37F391007A18DB /* sinaweibo.png */,
 				0717991B1B3A93030036F759 /* note.png */,
@@ -646,11 +646,11 @@
 				076889F21B3BE6D800E867F5 /* DetailViewController.xib in Resources */,
 				071799011B3A8EB20036F759 /* LaunchScreen.xib in Resources */,
 				071A33B61CE1E0EE0077D671 /* read_me.txt in Resources */,
+				07AEB8F4210EBE6600CDBE49 /* newIcon.png in Resources */,
 				071798FE1B3A8EB20036F759 /* Images.xcassets in Resources */,
 				071A33AA1CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				071A33B21CE1E0EE0077D671 /* WeiboSDK.bundle in Resources */,
 				071799221B3AA14B0036F759 /* MyCell.xib in Resources */,
-				071068351D58F28600D5B93B /* AppIcon.png in Resources */,
 				076889D51B3BA38500E867F5 /* AddNewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,11 +678,11 @@
 				071A33B71CE1E0EE0077D671 /* read_me.txt in Resources */,
 				07FE4A601BE0C72B005D513E /* MyCell.xib in Resources */,
 				071A339D1CE1E0EE0077D671 /* ShareSDKUI.bundle in Resources */,
+				07AEB8F5210EBE6600CDBE49 /* newIcon.png in Resources */,
 				071A33BD1CE1E0EE0077D671 /* ShareSDK.bundle in Resources */,
 				071A33AB1CE1E0EE0077D671 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				07FE4A621BE0C72B005D513E /* AddNewViewController.xib in Resources */,
 				073F7A741D37F391007A18DB /* sinaweibo.png in Resources */,
-				071068361D58F28600D5B93B /* AppIcon.png in Resources */,
 				071A33B31CE1E0EE0077D671 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

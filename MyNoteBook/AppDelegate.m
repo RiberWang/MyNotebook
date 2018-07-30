@@ -152,14 +152,8 @@
 - (void)registerLocalAPNS {
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     
-    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
-        UIUserNotificationSettings *notificationSetting = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil];
-        [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSetting];
-    }
-    else
-    {
-        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
-    }
+    UIUserNotificationSettings *notificationSetting = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSetting];
     
     // 添加本地推送
     [[LocalRemind sharedLocalRemind] addLocalRemindStartOfTime:nil andName:@"本地推送"];

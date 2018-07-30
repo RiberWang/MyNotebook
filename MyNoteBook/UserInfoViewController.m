@@ -12,6 +12,7 @@
 
 @interface UserInfoViewController () <UIGestureRecognizerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *appImageView;
 @property (weak, nonatomic) IBOutlet UILabel *appVersionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *appNameLabel;
 
@@ -29,6 +30,9 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style: UIBarButtonItemStylePlain target:self action:@selector(backItem:)];
     self.navigationItem.leftBarButtonItem = leftItem;
 
+    self.appImageView.image = [UIImage imageNamed:@"newIcon.png"];
+    self.appImageView.clipsToBounds = YES;
+    self.appImageView.layer.cornerRadius = 10;
     _appNameLabel.text = AppName;
     _appVersionLabel.text = AppVersion;
     

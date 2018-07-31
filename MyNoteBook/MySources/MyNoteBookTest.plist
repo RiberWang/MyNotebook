@@ -2,6 +2,56 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>分享微博需要获取您的相册权限</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>timapiV1</string>
+		<string>wtlogintimV1</string>
+		<string>timopensdkdataline</string>
+		<string>timgamebindinggroup</string>
+		<string>timopensdkapiV4</string>
+		<string>wtlogintim</string>
+		<string>timopensdkgrouptribeshare</string>
+		<string>timOpensdkSSoLogin</string>
+		<string>timapiwallet</string>
+		<string>timgamebindinggroup</string>
+		<string>timopensdkfriend</string>
+		<string>tim</string>
+		<string>timwpa</string>
+		<string>tencentapi.qzone.reqContent</string>
+		<string>tencentapi.qq.reqContent</string>
+		<string>mqqopensdkgrouptribeshare</string>
+		<string>mqqgamebindinggroup</string>
+		<string>mqqopensdkdataline</string>
+		<string>mqqopensdkfriend</string>
+		<string>mqqapiwallet</string>
+		<string>mqzoneopensdkapiV2</string>
+		<string>mqzoneopensdkapi19</string>
+		<string>mqzoneopensdkapi</string>
+		<string>mqzoneopensdk</string>
+		<string>mqzone</string>
+		<string>wtloginmqq2</string>
+		<string>mqqopensdkapiV4</string>
+		<string>mttbrowser</string>
+		<string>mqqbrowser</string>
+		<string>mqqwpa</string>
+		<string>timapi</string>
+		<string>mqqapi</string>
+		<string>mqq</string>
+		<string>wtloginmqq2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>weibosdk2.5</string>
+		<string>weibosdk</string>
+		<string>sinaweibohdsso</string>
+		<string>sinaweibosso</string>
+		<string>sinaweibohd</string>
+		<string>sinaweibo</string>
+		<string>weixin</string>
+		<string>wechat</string>
+	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -75,45 +125,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>2.0.0</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>sinaweibohd</string>
-		<string>sinaweibo</string>
-		<string>vkauthorize</string>
-		<string>fb-messenger</string>
-		<string>yixinfav</string>
-		<string>yixinoauth</string>
-		<string>yixinopenapi</string>
-		<string>yixin</string>
-		<string>pinit</string>
-		<string>kakaolink</string>
-		<string>kakao48d3f524e4a636b08d81b3ceb50f1003</string>
-		<string>alipay</string>
-		<string>storykompassauth</string>
-		<string>pinterestsdk.v1</string>
-		<string>kakaokompassauth</string>
-		<string>alipayshare</string>
-		<string>pinit</string>
-		<string>line</string>
-		<string>whatsapp</string>
-		<string>mqqwpa</string>
-		<string>instagram</string>
-		<string>fbauth2</string>
-		<string>renren</string>
-		<string>renrenios</string>
-		<string>renrenapi</string>
-		<string>rm226427com.mob.demoShareSDK</string>
-		<string>mqq</string>
-		<string>mqqopensdkapiV2</string>
-		<string>mqqopensdkapiV3</string>
-		<string>wtloginmqq2</string>
-		<string>mqqapi</string>
-		<string>mqqOpensdkSSoLogin</string>
-		<string>sinaweibohdsso</string>
-		<string>sinaweibosso</string>
-		<string>wechat</string>
-		<string>weixin</string>
-	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAllowsArbitraryLoads</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>是否允许App获取您的相册权限</string>
+	<string>分享微博需要获取您的相册权限</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>timapiV1</string>

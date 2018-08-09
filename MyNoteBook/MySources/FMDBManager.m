@@ -55,7 +55,7 @@ static dispatch_once_t predicate;
             NSLog(@"数据库打开失败!");
         }
         
-        NSString *sql = @"create table if not exists MyNote(ID integer primary key autoincrement, date varchar(256), content varchar(1024))";
+        NSString *sql = @"create table if not exists MyNote(ID integer primary key autoincrement, date varchar(256), content text)";
         if ([fmDatabase executeUpdate:sql]) {
             NSLog(@"表创建成功!");
             [fmDatabase close];

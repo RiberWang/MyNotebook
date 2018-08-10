@@ -1,6 +1,6 @@
-# MyNoteBook 万事本 
+# MyNotebook 万事本 
 ### 一款简单易用的记事本
-数据库FMDB的简单实用，涉及数据库的增删改查
+数据库FMDB的简单使用，涉及数据库的增删改查
 
 ![gif](https://github.com/RiberWang/MyNoteBook/blob/master/Screenshot/MyNotebook.gif)
 

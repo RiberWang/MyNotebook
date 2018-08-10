@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		071798FC1B3A8EB20036F759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071798FA1B3A8EB20036F759 /* Main.storyboard */; };
 		071798FE1B3A8EB20036F759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071798FD1B3A8EB20036F759 /* Images.xcassets */; };
 		071799011B3A8EB20036F759 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071798FF1B3A8EB20036F759 /* LaunchScreen.xib */; };
 		0717990D1B3A8EB20036F759 /* MyNoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717990C1B3A8EB20036F759 /* MyNoteBookTests.m */; };
@@ -53,7 +52,6 @@
 		0789D3742110553100AEFFEA /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0789D36F2110553100AEFFEA /* delete@2x.png */; };
 		0789D3752110553100AEFFEA /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0789D36F2110553100AEFFEA /* delete@2x.png */; };
 		0789D37B21105C3500AEFFEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D37721105C3400AEFFEA /* main.m */; };
-		0789D37C21105C3500AEFFEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D37721105C3400AEFFEA /* main.m */; };
 		07A78F86211D2DF200ECB69D /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07A78F6B211D2DF200ECB69D /* WeiboSDK.bundle */; };
 		07A78F87211D2DF200ECB69D /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07A78F6B211D2DF200ECB69D /* WeiboSDK.bundle */; };
 		07A78F88211D2DF200ECB69D /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78F6C211D2DF200ECB69D /* libWeiboSDK.a */; };
@@ -86,12 +84,18 @@
 		07A78FA3211D2DF200ECB69D /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78F83211D2DF200ECB69D /* ShareSDK.framework */; };
 		07A78FA4211D2DF200ECB69D /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78F85211D2DF200ECB69D /* MOBFoundation.framework */; };
 		07A78FA5211D2DF200ECB69D /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A78F85211D2DF200ECB69D /* MOBFoundation.framework */; };
+		07A78FA6211D30BB00ECB69D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D2B7210FFF6E00AEFFEA /* AppDelegate.m */; };
+		07A78FA7211D30CB00ECB69D /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D2C4210FFF6E00AEFFEA /* AddNewViewController.m */; };
+		07A78FA8211D30CB00ECB69D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D2BC210FFF6E00AEFFEA /* DetailViewController.m */; };
+		07A78FA9211D30CB00ECB69D /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D2BF210FFF6E00AEFFEA /* MyNavController.m */; };
+		07A78FAA211D30CB00ECB69D /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D2C0210FFF6E00AEFFEA /* UserInfoViewController.m */; };
+		07A78FAB211D312700ECB69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D37721105C3400AEFFEA /* main.m */; };
+		07A78FAC211D313F00ECB69D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D2BD210FFF6E00AEFFEA /* ViewController.m */; };
 		07BD2E361C51062D003D672A /* LocalRemind.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BD2E351C51062D003D672A /* LocalRemind.m */; };
 		07BD2E371C51062D003D672A /* LocalRemind.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BD2E351C51062D003D672A /* LocalRemind.m */; };
 		07FE4A4B1BE0C72B005D513E /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717991F1B3AA14B0036F759 /* MyCell.m */; };
 		07FE4A511BE0C72B005D513E /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EA1B3BCE1E00E867F5 /* FMDBManager.m */; };
 		07FE4A541BE0C72B005D513E /* MyNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889D71B3BCA2F00E867F5 /* MyNote.m */; };
-		07FE4A591BE0C72B005D513E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071798FA1B3A8EB20036F759 /* Main.storyboard */; };
 		07FE4A5D1BE0C72B005D513E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071798FF1B3A8EB20036F759 /* LaunchScreen.xib */; };
 		07FE4A5E1BE0C72B005D513E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071798FD1B3A8EB20036F759 /* Images.xcassets */; };
 		07FE4A601BE0C72B005D513E /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071799201B3AA14B0036F759 /* MyCell.xib */; };
@@ -122,7 +126,6 @@
 
 /* Begin PBXFileReference section */
 		071798ED1B3A8EB20036F759 /* MyNoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		071798FB1B3A8EB20036F759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		071798FD1B3A8EB20036F759 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		071799001B3A8EB20036F759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,7 +300,6 @@
 				0717991A1B3A93030036F759 /* MySources */,
 				071799191B3A93030036F759 /* Model */,
 				0717991C1B3A93030036F759 /* View */,
-				071798FA1B3A8EB20036F759 /* Main.storyboard */,
 				071798FD1B3A8EB20036F759 /* Images.xcassets */,
 				071798FF1B3A8EB20036F759 /* LaunchScreen.xib */,
 				071798F01B3A8EB20036F759 /* Supporting Files */,
@@ -663,7 +665,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				071798FC1B3A8EB20036F759 /* Main.storyboard in Resources */,
 				0789D3742110553100AEFFEA /* delete@2x.png in Resources */,
 				07A78F94211D2DF200ECB69D /* ShareSDKUI.bundle in Resources */,
 				0789D2CC210FFF6F00AEFFEA /* DetailViewController.xib in Resources */,
@@ -691,7 +692,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FE4A591BE0C72B005D513E /* Main.storyboard in Resources */,
 				0789D3752110553100AEFFEA /* delete@2x.png in Resources */,
 				07A78F8B211D2DF200ECB69D /* README.txt in Resources */,
 				0789D3712110553100AEFFEA /* note.png in Resources */,
@@ -743,7 +743,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0789D37C21105C3500AEFFEA /* main.m in Sources */,
+				07A78FAC211D313F00ECB69D /* ViewController.m in Sources */,
+				07A78FAB211D312700ECB69D /* main.m in Sources */,
+				07A78FA7211D30CB00ECB69D /* AddNewViewController.m in Sources */,
+				07A78FA8211D30CB00ECB69D /* DetailViewController.m in Sources */,
+				07A78FA9211D30CB00ECB69D /* MyNavController.m in Sources */,
+				07A78FAA211D30CB00ECB69D /* UserInfoViewController.m in Sources */,
+				07A78FA6211D30BB00ECB69D /* AppDelegate.m in Sources */,
 				07FE4A4B1BE0C72B005D513E /* MyCell.m in Sources */,
 				07BD2E371C51062D003D672A /* LocalRemind.m in Sources */,
 				07FE4A511BE0C72B005D513E /* FMDBManager.m in Sources */,
@@ -767,14 +773,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		071798FA1B3A8EB20036F759 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				071798FB1B3A8EB20036F759 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		071798FF1B3A8EB20036F759 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1007,12 +1005,12 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = MyNoteBookTest.app/PrivateHeaders;
-				PRODUCT_BUNDLE_IDENTIFIER = com.riberwang.mynotebook;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.riberwang.mynotebook-test";
 				PRODUCT_NAME = MyNoteBookTest;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 armv7";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1046,12 +1044,12 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = MyNoteBookTest.app/PrivateHeaders;
-				PRODUCT_BUNDLE_IDENTIFIER = com.riberwang.mynotebook;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.riberwang.mynotebook-test";
 				PRODUCT_NAME = MyNoteBookTest;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 armv7";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

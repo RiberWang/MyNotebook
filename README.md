@@ -2,6 +2,8 @@
 ### 一款简单易用的记事本
 数据库FMDB的简单实用，涉及数据库的增删改查
 
+![gif](https://github.com/RiberWang/MyNoteBook/blob/master/Screenshot/MyNotebook.gif)
+
 ### 更新日志  
 1.应用加图标,修改 return 键不再保存,而是换行  
 2.解决 seachBar 搜索时,点击 seachBar 键盘一会隐藏一会退出 bug  
@@ -139,4 +141,3 @@
 8.处于搜索时 进入详情 返回首页面 点击取消 导航栏编程透明了 （设置导航栏不透明 视图位置全部下移 状态栏无法改变）
 
 ### [AppStore下载地址](https://itunes.apple.com/cn/app/万事本/id1057007765?mt=8!)
-

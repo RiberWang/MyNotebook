@@ -122,7 +122,7 @@
 
     // 导航条位置
     CGRect navFrame = self.navigationController.navigationBar.frame;
-    navFrame.origin.y = 20;
+    navFrame.origin.y = _navBarOrginY;
     self.navigationController.navigationBar.frame = navFrame;
 }
 
@@ -133,7 +133,7 @@
     {
         // 导航条位置
         CGRect navFrame = self.navigationController.navigationBar.frame;
-        navFrame.origin.y = 20;
+        navFrame.origin.y = _navBarOrginY;
         self.navigationController.navigationBar.frame = navFrame;
     }
     else

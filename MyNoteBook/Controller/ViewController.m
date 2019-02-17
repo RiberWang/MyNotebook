@@ -53,6 +53,12 @@
 
 @implementation ViewController
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"GotoDetailPage" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"enterBackground" object:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -72,7 +78,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     
     // 进入后台
-    [[ NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterBackground:) name:@"enterBackground" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterBackground:) name:@"enterBackground" object:nil];
     
     // 摇一摇
     [UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
@@ -189,12 +195,12 @@
     float statusH = [UIApplication sharedApplication].statusBarFrame.size.height;
 
     // 初始化搜索框的背景
-    _searchBarBgView = [[UIView alloc] initWithFrame:CGRectMake(0, NavMaxY-statusH, self.view.frame.size.width, 20+40)];
+    _searchBarBgView = [[UIView alloc] initWithFrame:CGRectMake(0, NavMaxY-statusH, self.view.frame.size.width, statusH+40)];
     _searchBarBgView.backgroundColor = [UIColor colorWithRed:198/255.0 green:198/255.0 blue:203/255.0 alpha:1];
     [self.view addSubview:_searchBarBgView];
     
     // 初始化搜索框
-    _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 20, KScreenWidth, 40)];
+    _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, statusH, KScreenWidth, 40)];
 //    _searchBar.tintColor = GRAYTEXT; // 光标颜色
 //    _searchBar.barTintColor = [UIColor whiteColor]; //背景颜色
     _searchBar.placeholder = @"请输入要搜索的内容";
@@ -202,7 +208,7 @@
     [_searchBarBgView addSubview:_searchBar];
     
     // 去掉 searchBar 的边线
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, 20+2)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, statusH+2)];
     view.backgroundColor = [UIColor colorWithRed:198/255.0 green:198/255.0 blue:203/255.0 alpha:1];
     [_searchBarBgView addSubview:view];
     
@@ -312,7 +318,7 @@
             
             // 导航条位置
             CGRect navFrame = self.navigationController.navigationBar.frame;
-            navFrame.origin.y = 20;
+            navFrame.origin.y = StatusMaxY;
             self.navigationController.navigationBar.frame = navFrame;
             
             // 搜索框位置
@@ -326,7 +332,6 @@
             collectionViewFrame.size.height = self.view.frame.size.height - collectionViewFrame.origin.y;
             _collectionView.frame = collectionViewFrame;
         } completion:^(BOOL finished) {
-            
             _isSearch = NO;
         }];
 
@@ -430,61 +435,63 @@
         
         [_collectionView reloadData];
     }
-    else if (_isSearch)
-    {
-        // 处于搜索时 点击collectionView 退出搜索 如果是点在详情页面上 使其不进入详情页面
-        _isSearch = NO;
-    }
-    else
-    {
-        DetailViewController *detailVC = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-        // 处理拼音搜索时 没按确认 点击 cell 崩溃
-        if (_searchArray.count == 0 || _searchBar.text.length == 0) {
-            detailVC.myNote = _dataSources[indexPath.row];
+    else {
+        if (_isSearch)
+        {
+            // 处于搜索时 点击collectionView 退出搜索 如果是点在详情页面上 使其不进入详情页面
+            _isSearch = NO;
         }
         else
         {
-            detailVC.myNote = _searchArray[indexPath.row];
-        }
-
-        detailVC.navBarOrginY = self.navigationController.navigationBar.frame.origin.y;
-        detailVC.clickDelBlock = ^(UIBarButtonItem *item) {
-            if (_searchBar.text.length == 0)
-            {
-                [manager deleteNote:_dataSources[indexPath.row]];
-                [_dataSources removeObjectAtIndex:indexPath.row];
-                [_collectionView deleteItemsAtIndexPaths:@[indexPath]];
-                
-                if (_dataSources.count > 0) {
-                    MyNote *tmpNote = _dataSources.lastObject;
-                    NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
-                    [group setObject:@{@"content": tmpNote.content, @"date":tmpNote.date, @"id":@(tmpNote.ID)} forKey:@"latestNote"];
-                }
-                else {
-                    NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
-                    [group removeObjectForKey:@"latestNote"];
-                }
+            DetailViewController *detailVC = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+            // 处理拼音搜索时 没按确认 点击 cell 崩溃
+            if (_searchArray.count == 0 || _searchBar.text.length == 0) {
+                detailVC.myNote = _dataSources[indexPath.row];
             }
             else
             {
-                [manager deleteNote:_searchArray[indexPath.row]];
-                [_dataSources removeObject:_searchArray[indexPath.row]];
-                [_searchArray removeObjectAtIndex:indexPath.row];
-                [_collectionView deleteItemsAtIndexPaths:@[indexPath]];
+                detailVC.myNote = _searchArray[indexPath.row];
             }
-        };
-        detailVC.clickBackBlock = ^(MyNote *note) {
             
-            [manager updateMyNote:note];
-
+            detailVC.navBarOrginY = StatusMaxY;
+            detailVC.clickDelBlock = ^(UIBarButtonItem *item) {
+                if (_searchBar.text.length == 0)
+                {
+                    [manager deleteNote:_dataSources[indexPath.row]];
+                    [_dataSources removeObjectAtIndex:indexPath.row];
+                    [_collectionView deleteItemsAtIndexPaths:@[indexPath]];
+                    
+                    if (_dataSources.count > 0) {
+                        MyNote *tmpNote = _dataSources.lastObject;
+                        NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+                        [group setObject:@{@"content": tmpNote.content, @"date":tmpNote.date, @"id":@(tmpNote.ID)} forKey:@"latestNote"];
+                    }
+                    else {
+                        NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+                        [group removeObjectForKey:@"latestNote"];
+                    }
+                }
+                else
+                {
+                    [manager deleteNote:_searchArray[indexPath.row]];
+                    [_dataSources removeObject:_searchArray[indexPath.row]];
+                    [_searchArray removeObjectAtIndex:indexPath.row];
+                    [_collectionView deleteItemsAtIndexPaths:@[indexPath]];
+                }
+            };
+            detailVC.clickBackBlock = ^(MyNote *note) {
+                
+                [manager updateMyNote:note];
+                
+                
+                [_collectionView reloadData];
+            };
             
-            [_collectionView reloadData];
-        };
-        
-        _isGoToDetail = YES;
-        _isDetailAndBackground = YES;
-        
-        [self.navigationController pushViewController:detailVC animated:YES];
+            _isGoToDetail = YES;
+            _isDetailAndBackground = YES;
+            
+            [self.navigationController pushViewController:detailVC animated:YES];
+        }
     }
 }
 
@@ -654,7 +661,7 @@
         float statusHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
         // 导航条位置
         CGRect navFrame = self.navigationController.navigationBar.frame;
-        navFrame.origin.y = 20;
+        navFrame.origin.y = statusHeight;
         self.navigationController.navigationBar.frame = navFrame;
         [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
         // 搜索框位置

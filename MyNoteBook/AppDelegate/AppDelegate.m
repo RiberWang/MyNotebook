@@ -10,6 +10,10 @@
 #import "ViewController.h"
 #import "MyNavController.h"
 #import "LocalRemind.h"
+#import "AddNewViewController.h"
+#import "DetailViewController.h"
+#import "MyNote.h"
+#import "FMDBManager.h"
 
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDKConnector/ShareSDKConnector.h>
@@ -188,8 +192,7 @@
     return false;
 }
 
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler {
-    
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
     return YES;
 }
 
@@ -213,10 +216,58 @@
         if ([action isEqualToString:@"GotoHomePage"]) {
             NSLog(@"Enter HomePage");
         }
-        else if([action isEqualToString:@"GotoOrderPage"]) {
-//            BasicHomeViewController *vc = (BasicHomeViewController*)self.window.rootViewController;
-//            [vc.tabbar selectAtIndex:2];
-            NSLog(@"Enter OrderPage");
+        else if([action isEqualToString:@"GotoAddPage"]) {
+            MyNavController *nav = (MyNavController *)self.window.rootViewController;
+            AddNewViewController *addNewVC = [[AddNewViewController alloc] init];
+            addNewVC.delegate = nav.viewControllers.lastObject;
+            [nav pushViewController:addNewVC animated:YES];
+        }
+    }
+    
+    return  YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    NSString* prefix = @"MyNoteBookWidget://action=";
+    if ([[url absoluteString] rangeOfString:prefix].location != NSNotFound) {
+        NSString* action = [[url absoluteString] substringFromIndex:prefix.length];
+        if ([action isEqualToString:@"GotoHomePage"]) {
+            NSLog(@"Enter HomePage");
+        }
+        else if([action isEqualToString:@"GotoAddPage"]) {
+            MyNavController *nav = (MyNavController *)self.window.rootViewController;
+            AddNewViewController *addNewVC = [[AddNewViewController alloc] init];
+            addNewVC.delegate = nav.viewControllers.lastObject;
+            [nav pushViewController:addNewVC animated:YES];
+        }
+        else if ([action isEqualToString:@"GotoDetailPage"]) {
+            NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+            NSDictionary *noteDic = [group valueForKey:@"latestNote"];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"GotoDetailPage" object:noteDic];
+            
+//            MyNavController *nav = (MyNavController *)self.window.rootViewController;
+//            ViewController *vc = nav.viewControllers.lastObject;
+//            DetailViewController *detailVC = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+//            MyNote *note = [[MyNote alloc] init];
+//            NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+//            NSDictionary *noteDic = [group valueForKey:@"latestNote"];
+//
+//            note.content = noteDic[@"content"];
+//            note.date = noteDic[@"date"];
+//            note.ID = [noteDic[@"ID"] integerValue];
+//            detailVC.myNote = note;
+//            detailVC.clickDelBlock = ^(UIBarButtonItem *item) {
+//                [[FMDBManager sharedDBManager] deleteNote:note];
+//                [vc.dataSources removeObjectAtIndex:0];
+//                [vc.collectionView reloadData];
+//            };
+//            detailVC.clickBackBlock = ^(MyNote *note) {
+//
+//                [[FMDBManager sharedDBManager] updateMyNote:note];
+//
+//                [vc.collectionView reloadData];
+//            };
+//            [nav pushViewController:detailVC animated:YES];
         }
     }
     

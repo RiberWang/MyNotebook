@@ -48,8 +48,6 @@
     CGFloat _duration;
 }
 
-@property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) NSMutableArray *dataSources; // 数据源
 
 @end
 
@@ -68,7 +66,8 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
     
     [self createUI];
-    
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToDetail:) name:@"GotoDetailPage" object:nil];
     // 添加键盘监听
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     
@@ -78,6 +77,40 @@
     // 摇一摇
     [UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
     [self becomeFirstResponder];
+}
+
+- (void)pushToDetail:(NSNotification *)noti {
+    DetailViewController *detailVC = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    detailVC.myNote = _dataSources.lastObject;
+
+    detailVC.navBarOrginY = self.navigationController.navigationBar.frame.origin.y;
+    detailVC.clickDelBlock = ^(UIBarButtonItem *item) {
+        [manager deleteNote:_dataSources.lastObject];
+        [_dataSources removeObjectAtIndex:_dataSources.count-1];
+        [_collectionView reloadData];
+        
+        if (_dataSources.count > 0) {
+            MyNote *tmpNote = _dataSources.lastObject;
+            NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+            [group setObject:@{@"content": tmpNote.content, @"date":tmpNote.date, @"id":@(tmpNote.ID)} forKey:@"latestNote"];
+        }
+        else {
+            NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+            [group removeObjectForKey:@"latestNote"];
+        }
+    };
+    detailVC.clickBackBlock = ^(MyNote *note) {
+        
+        [manager updateMyNote:note];
+        
+        [_collectionView reloadData];
+    };
+    
+    _isGoToDetail = YES;
+    _isDetailAndBackground = YES;
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
+
 }
 
 - (UIImage *)imageWithColor:(UIColor *)color {
@@ -101,7 +134,11 @@
     _isDetailAndBackground = NO;
     NSArray *array = [manager selectNotes];
     _dataSources = (NSMutableArray *)array;
-    
+    if (_dataSources.count > 0) {
+        MyNote *tmpNote = _dataSources.lastObject;
+        NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+        [group setObject:@{@"content": tmpNote.content, @"date":tmpNote.date, @"id":@(tmpNote.ID)} forKey:@"latestNote"];
+    }
     // 没数据时 编辑置灰 删除操作时 不置灰 待完善
 //    if (_dataSources.count == 0) {
 //        self.navigationItem.leftBarButtonItem.enabled = NO;
@@ -256,7 +293,6 @@
 - (void)addNewNote:(UIBarButtonItem *)item {
     AddNewViewController *addNewVC = [[AddNewViewController alloc] init];
     addNewVC.delegate = self;
-    addNewVC.title = @"添加新事件";
     [self.navigationController pushViewController:addNewVC animated:YES];
 }
 
@@ -382,6 +418,15 @@
         if (_searchArray.count != 0) {
             [_searchArray removeObjectAtIndex:indexPath.row];
         }
+        if (_dataSources.count > 0) {
+            MyNote *tmpNote = _dataSources.lastObject;
+            NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+            [group setObject:@{@"content": tmpNote.content, @"date":tmpNote.date, @"id":@(tmpNote.ID)} forKey:@"latestNote"];
+        }
+        else {
+            NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+            [group removeObjectForKey:@"latestNote"];
+        }
         
         [_collectionView reloadData];
     }
@@ -393,8 +438,6 @@
     else
     {
         DetailViewController *detailVC = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-        detailVC.title = @"查看详情";
-
         // 处理拼音搜索时 没按确认 点击 cell 崩溃
         if (_searchArray.count == 0 || _searchBar.text.length == 0) {
             detailVC.myNote = _dataSources[indexPath.row];
@@ -411,6 +454,16 @@
                 [manager deleteNote:_dataSources[indexPath.row]];
                 [_dataSources removeObjectAtIndex:indexPath.row];
                 [_collectionView deleteItemsAtIndexPaths:@[indexPath]];
+                
+                if (_dataSources.count > 0) {
+                    MyNote *tmpNote = _dataSources.lastObject;
+                    NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+                    [group setObject:@{@"content": tmpNote.content, @"date":tmpNote.date, @"id":@(tmpNote.ID)} forKey:@"latestNote"];
+                }
+                else {
+                    NSUserDefaults *group = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.riber.notepad.today"];
+                    [group removeObjectForKey:@"latestNote"];
+                }
             }
             else
             {

@@ -24,6 +24,28 @@
 		072EE2361D478D730056C9D8 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C41CE1E2000077D671 /* libstdc++.tbd */; };
 		072EE2371D478DA00056C9D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C21CE1E1F30077D671 /* libz.tbd */; };
 		072EE2381D478F530056C9D8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C01CE1E1EB0077D671 /* libicucore.tbd */; };
+		073B1FCB2218526900779E41 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */; };
+		073B1FCF2218526900779E41 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FCE2218526900779E41 /* TodayViewController.m */; };
+		073B1FD62218526900779E41 /* MyNoteBookToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 073B1FCA2218526900779E41 /* MyNoteBookToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		073B1FDB2218E80B00779E41 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B1FDA2218E80B00779E41 /* libsqlite3.0.tbd */; };
+		073B1FE82218F34700779E41 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B1FDA2218E80B00779E41 /* libsqlite3.0.tbd */; };
+		073B1FF52218F3A700779E41 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEB2218F3A700779E41 /* FMDatabaseQueue.m */; };
+		073B1FF62218F3A700779E41 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEB2218F3A700779E41 /* FMDatabaseQueue.m */; };
+		073B1FF72218F3A700779E41 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEB2218F3A700779E41 /* FMDatabaseQueue.m */; };
+		073B1FF82218F3A700779E41 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEE2218F3A700779E41 /* FMDatabaseAdditions.m */; };
+		073B1FF92218F3A700779E41 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEE2218F3A700779E41 /* FMDatabaseAdditions.m */; };
+		073B1FFA2218F3A700779E41 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEE2218F3A700779E41 /* FMDatabaseAdditions.m */; };
+		073B1FFB2218F3A700779E41 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEF2218F3A700779E41 /* FMDatabase.m */; };
+		073B1FFC2218F3A700779E41 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEF2218F3A700779E41 /* FMDatabase.m */; };
+		073B1FFD2218F3A700779E41 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FEF2218F3A700779E41 /* FMDatabase.m */; };
+		073B1FFE2218F3A700779E41 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FF32218F3A700779E41 /* FMDatabasePool.m */; };
+		073B1FFF2218F3A700779E41 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FF32218F3A700779E41 /* FMDatabasePool.m */; };
+		073B20002218F3A700779E41 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FF32218F3A700779E41 /* FMDatabasePool.m */; };
+		073B20012218F3A700779E41 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FF42218F3A700779E41 /* FMResultSet.m */; };
+		073B20022218F3A700779E41 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FF42218F3A700779E41 /* FMResultSet.m */; };
+		073B20032218F3A700779E41 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B1FF42218F3A700779E41 /* FMResultSet.m */; };
+		073B20072218FBF200779E41 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EA1B3BCE1E00E867F5 /* FMDBManager.m */; };
+		073B20082218FC2800779E41 /* MyNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889D71B3BCA2F00E867F5 /* MyNote.m */; };
 		076889D81B3BCA2F00E867F5 /* MyNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889D71B3BCA2F00E867F5 /* MyNote.m */; };
 		076889EB1B3BCE1E00E867F5 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EA1B3BCE1E00E867F5 /* FMDBManager.m */; };
 		0789D2C6210FFF6F00AEFFEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D2B7210FFF6E00AEFFEA /* AppDelegate.m */; };
@@ -35,16 +57,6 @@
 		0789D2CC210FFF6F00AEFFEA /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0789D2C1210FFF6E00AEFFEA /* DetailViewController.xib */; };
 		0789D2CD210FFF6F00AEFFEA /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D2C4210FFF6E00AEFFEA /* AddNewViewController.m */; };
 		0789D2CE210FFF6F00AEFFEA /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0789D2C5210FFF6E00AEFFEA /* AddNewViewController.xib */; };
-		0789D3622110548500AEFFEA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D3392110548500AEFFEA /* FMDatabaseQueue.m */; };
-		0789D3632110548500AEFFEA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D3392110548500AEFFEA /* FMDatabaseQueue.m */; };
-		0789D3642110548500AEFFEA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D33C2110548500AEFFEA /* FMDatabaseAdditions.m */; };
-		0789D3652110548500AEFFEA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D33C2110548500AEFFEA /* FMDatabaseAdditions.m */; };
-		0789D3662110548500AEFFEA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D33D2110548500AEFFEA /* FMDatabase.m */; };
-		0789D3672110548500AEFFEA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D33D2110548500AEFFEA /* FMDatabase.m */; };
-		0789D3682110548500AEFFEA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D3402110548500AEFFEA /* FMDatabasePool.m */; };
-		0789D3692110548500AEFFEA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D3402110548500AEFFEA /* FMDatabasePool.m */; };
-		0789D36A2110548500AEFFEA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D3412110548500AEFFEA /* FMResultSet.m */; };
-		0789D36B2110548500AEFFEA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0789D3412110548500AEFFEA /* FMResultSet.m */; };
 		0789D3702110553100AEFFEA /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 0789D36D2110553100AEFFEA /* note.png */; };
 		0789D3712110553100AEFFEA /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 0789D36D2110553100AEFFEA /* note.png */; };
 		0789D3722110553100AEFFEA /* newIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0789D36E2110553100AEFFEA /* newIcon.png */; };
@@ -109,6 +121,13 @@
 			remoteGlobalIDString = 071798EC1B3A8EB20036F759;
 			remoteInfo = MyNoteBook;
 		};
+		073B1FD42218526900779E41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071798E51B3A8EB20036F759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073B1FC92218526900779E41;
+			remoteInfo = MyNoteBookToday;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,6 +137,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				073B1FD62218526900779E41 /* MyNoteBookToday.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +159,25 @@
 		071A33C61CE1E2080077D671 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		071A33C81CE1E2200077D671 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		071A33CA1CE1E2300077D671 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		073B1FCA2218526900779E41 /* MyNoteBookToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNoteBookToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		073B1FCD2218526900779E41 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		073B1FCE2218526900779E41 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		073B1FD32218526900779E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		073B1FDA2218E80B00779E41 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		073B1FDD2218ECE500779E41 /* MyNoteBookToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNoteBookToday.entitlements; sourceTree = "<group>"; };
+		073B1FEA2218F3A700779E41 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		073B1FEB2218F3A700779E41 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		073B1FEC2218F3A700779E41 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		073B1FED2218F3A700779E41 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		073B1FEE2218F3A700779E41 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		073B1FEF2218F3A700779E41 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		073B1FF02218F3A700779E41 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		073B1FF12218F3A700779E41 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		073B1FF22218F3A700779E41 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		073B1FF32218F3A700779E41 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		073B1FF42218F3A700779E41 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		073B20042218F3E300779E41 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		073B20062218F61400779E41 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		076889D61B3BCA2F00E867F5 /* MyNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNote.h; sourceTree = "<group>"; };
 		076889D71B3BCA2F00E867F5 /* MyNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNote.m; sourceTree = "<group>"; };
 		076889E91B3BCE1E00E867F5 /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
@@ -158,16 +197,6 @@
 		0789D2C3210FFF6E00AEFFEA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0789D2C4210FFF6E00AEFFEA /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
 		0789D2C5210FFF6E00AEFFEA /* AddNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
-		0789D3382110548500AEFFEA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		0789D3392110548500AEFFEA /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		0789D33A2110548500AEFFEA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		0789D33B2110548500AEFFEA /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		0789D33C2110548500AEFFEA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		0789D33D2110548500AEFFEA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		0789D33E2110548500AEFFEA /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		0789D33F2110548500AEFFEA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		0789D3402110548500AEFFEA /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		0789D3412110548500AEFFEA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		0789D36D2110553100AEFFEA /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
 		0789D36E2110553100AEFFEA /* newIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newIcon.png; sourceTree = "<group>"; };
 		0789D36F2110553100AEFFEA /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
@@ -209,6 +238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073B1FDB2218E80B00779E41 /* libsqlite3.0.tbd in Frameworks */,
 				072EE2381D478F530056C9D8 /* libicucore.tbd in Frameworks */,
 				07A78F8E211D2DF200ECB69D /* TencentOpenAPI.framework in Frameworks */,
 				07A78F9A211D2DF200ECB69D /* QQConnector.framework in Frameworks */,
@@ -234,6 +264,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073B1FC72218526900779E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073B1FE82218F34700779E41 /* libsqlite3.0.tbd in Frameworks */,
+				073B1FCB2218526900779E41 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +315,7 @@
 				071A33C01CE1E1EB0077D671 /* libicucore.tbd */,
 				071798EF1B3A8EB20036F759 /* MyNoteBook */,
 				071799091B3A8EB20036F759 /* MyNoteBookTests */,
+				073B1FCC2218526900779E41 /* MyNoteBookToday */,
 				078D4A7B1D5A3A74000B0FA9 /* Frameworks */,
 				071798EE1B3A8EB20036F759 /* Products */,
 			);
@@ -287,6 +327,7 @@
 				071798ED1B3A8EB20036F759 /* MyNoteBook.app */,
 				071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */,
 				07FE4A661BE0C72B005D513E /* MyNoteBookTest.app */,
+				073B1FCA2218526900779E41 /* MyNoteBookToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -367,6 +408,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		073B1FCC2218526900779E41 /* MyNoteBookToday */ = {
+			isa = PBXGroup;
+			children = (
+				073B1FDD2218ECE500779E41 /* MyNoteBookToday.entitlements */,
+				073B1FCD2218526900779E41 /* TodayViewController.h */,
+				073B1FCE2218526900779E41 /* TodayViewController.m */,
+				073B1FD32218526900779E41 /* Info.plist */,
+			);
+			path = MyNoteBookToday;
+			sourceTree = "<group>";
+		};
+		073B1FE92218F3A700779E41 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				073B1FEA2218F3A700779E41 /* FMDatabase.h */,
+				073B1FEB2218F3A700779E41 /* FMDatabaseQueue.m */,
+				073B1FEC2218F3A700779E41 /* FMResultSet.h */,
+				073B1FED2218F3A700779E41 /* FMDatabasePool.h */,
+				073B1FEE2218F3A700779E41 /* FMDatabaseAdditions.m */,
+				073B1FEF2218F3A700779E41 /* FMDatabase.m */,
+				073B1FF02218F3A700779E41 /* FMDatabaseQueue.h */,
+				073B1FF12218F3A700779E41 /* FMDB.h */,
+				073B1FF22218F3A700779E41 /* FMDatabaseAdditions.h */,
+				073B1FF32218F3A700779E41 /* FMDatabasePool.m */,
+				073B1FF42218F3A700779E41 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		0789D2B5210FFF6E00AEFFEA /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +449,8 @@
 		0789D2B8210FFF6E00AEFFEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0789D2C3210FFF6E00AEFFEA /* ViewController.h */,
+				0789D2BD210FFF6E00AEFFEA /* ViewController.m */,
 				0789D2BB210FFF6E00AEFFEA /* AddNewViewController.h */,
 				0789D2C4210FFF6E00AEFFEA /* AddNewViewController.m */,
 				0789D2C5210FFF6E00AEFFEA /* AddNewViewController.xib */,
@@ -390,8 +462,6 @@
 				0789D2BA210FFF6E00AEFFEA /* UserInfoViewController.h */,
 				0789D2C0210FFF6E00AEFFEA /* UserInfoViewController.m */,
 				0789D2BE210FFF6E00AEFFEA /* UserInfoViewController.xib */,
-				0789D2C3210FFF6E00AEFFEA /* ViewController.h */,
-				0789D2BD210FFF6E00AEFFEA /* ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -399,27 +469,10 @@
 		0789D3162110548500AEFFEA /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				073B1FE92218F3A700779E41 /* fmdb */,
 				07A78F66211D2DF200ECB69D /* SDK */,
-				0789D3372110548500AEFFEA /* fmdb */,
 			);
 			path = Third;
-			sourceTree = "<group>";
-		};
-		0789D3372110548500AEFFEA /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				0789D3382110548500AEFFEA /* FMDatabase.h */,
-				0789D3392110548500AEFFEA /* FMDatabaseQueue.m */,
-				0789D33A2110548500AEFFEA /* FMResultSet.h */,
-				0789D33B2110548500AEFFEA /* FMDatabasePool.h */,
-				0789D33C2110548500AEFFEA /* FMDatabaseAdditions.m */,
-				0789D33D2110548500AEFFEA /* FMDatabase.m */,
-				0789D33E2110548500AEFFEA /* FMDatabaseQueue.h */,
-				0789D33F2110548500AEFFEA /* FMDatabaseAdditions.h */,
-				0789D3402110548500AEFFEA /* FMDatabasePool.m */,
-				0789D3412110548500AEFFEA /* FMResultSet.m */,
-			);
-			path = fmdb;
 			sourceTree = "<group>";
 		};
 		0789D36C2110553100AEFFEA /* image */ = {
@@ -435,6 +488,8 @@
 		078D4A7B1D5A3A74000B0FA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				073B20042218F3E300779E41 /* libstdc++.6.0.9.tbd */,
+				073B1FDA2218E80B00779E41 /* libsqlite3.0.tbd */,
 				078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -563,6 +618,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				073B1FD52218526900779E41 /* PBXTargetDependency */,
 			);
 			name = MyNoteBook;
 			productName = MyNoteBook;
@@ -586,6 +642,23 @@
 			productName = MyNoteBookTests;
 			productReference = 071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		073B1FC92218526900779E41 /* MyNoteBookToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073B1FD72218526900779E41 /* Build configuration list for PBXNativeTarget "MyNoteBookToday" */;
+			buildPhases = (
+				073B1FC62218526900779E41 /* Sources */,
+				073B1FC72218526900779E41 /* Frameworks */,
+				073B1FC82218526900779E41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNoteBookToday;
+			productName = MyNoteBookToday;
+			productReference = 073B1FCA2218526900779E41 /* MyNoteBookToday.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		07FE4A471BE0C72B005D513E /* MyNoteBookTest */ = {
 			isa = PBXNativeTarget;
@@ -615,22 +688,32 @@
 				TargetAttributes = {
 					071798EC1B3A8EB20036F759 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 5JXFMNNBPL;
+						DevelopmentTeam = 9P3PWY83WN;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
 					071799051B3A8EB20036F759 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 5JXFMNNBPL;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 9P3PWY83WN;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 071798EC1B3A8EB20036F759;
 					};
+					073B1FC92218526900779E41 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 9P3PWY83WN;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					07FE4A471BE0C72B005D513E = {
-						DevelopmentTeam = 5JXFMNNBPL;
+						DevelopmentTeam = 9P3PWY83WN;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -656,6 +739,7 @@
 				071798EC1B3A8EB20036F759 /* MyNoteBook */,
 				07FE4A471BE0C72B005D513E /* MyNoteBookTest */,
 				071799051B3A8EB20036F759 /* MyNoteBookTests */,
+				073B1FC92218526900779E41 /* MyNoteBookToday */,
 			);
 		};
 /* End PBXProject section */
@@ -682,6 +766,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		071799041B3A8EB20036F759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073B1FC82218526900779E41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -715,16 +806,16 @@
 				0789D2C6210FFF6F00AEFFEA /* AppDelegate.m in Sources */,
 				071799211B3AA14B0036F759 /* MyCell.m in Sources */,
 				0789D2CD210FFF6F00AEFFEA /* AddNewViewController.m in Sources */,
-				0789D3662110548500AEFFEA /* FMDatabase.m in Sources */,
+				073B1FFB2218F3A700779E41 /* FMDatabase.m in Sources */,
 				07BD2E361C51062D003D672A /* LocalRemind.m in Sources */,
 				0789D2CB210FFF6F00AEFFEA /* UserInfoViewController.m in Sources */,
+				073B20012218F3A700779E41 /* FMResultSet.m in Sources */,
+				073B1FF52218F3A700779E41 /* FMDatabaseQueue.m in Sources */,
+				073B1FFE2218F3A700779E41 /* FMDatabasePool.m in Sources */,
 				0789D37B21105C3500AEFFEA /* main.m in Sources */,
-				0789D36A2110548500AEFFEA /* FMResultSet.m in Sources */,
-				0789D3622110548500AEFFEA /* FMDatabaseQueue.m in Sources */,
-				0789D3682110548500AEFFEA /* FMDatabasePool.m in Sources */,
 				0789D2CA210FFF6F00AEFFEA /* MyNavController.m in Sources */,
+				073B1FF82218F3A700779E41 /* FMDatabaseAdditions.m in Sources */,
 				0789D2C8210FFF6F00AEFFEA /* ViewController.m in Sources */,
-				0789D3642110548500AEFFEA /* FMDatabaseAdditions.m in Sources */,
 				076889EB1B3BCE1E00E867F5 /* FMDBManager.m in Sources */,
 				076889D81B3BCA2F00E867F5 /* MyNote.m in Sources */,
 				0789D2C7210FFF6F00AEFFEA /* DetailViewController.m in Sources */,
@@ -739,6 +830,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		073B1FC62218526900779E41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073B20032218F3A700779E41 /* FMResultSet.m in Sources */,
+				073B1FCF2218526900779E41 /* TodayViewController.m in Sources */,
+				073B20072218FBF200779E41 /* FMDBManager.m in Sources */,
+				073B1FF72218F3A700779E41 /* FMDatabaseQueue.m in Sources */,
+				073B20002218F3A700779E41 /* FMDatabasePool.m in Sources */,
+				073B1FFA2218F3A700779E41 /* FMDatabaseAdditions.m in Sources */,
+				073B1FFD2218F3A700779E41 /* FMDatabase.m in Sources */,
+				073B20082218FC2800779E41 /* MyNote.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FE4A481BE0C72B005D513E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -746,19 +852,19 @@
 				07A78FAC211D313F00ECB69D /* ViewController.m in Sources */,
 				07A78FAB211D312700ECB69D /* main.m in Sources */,
 				07A78FA7211D30CB00ECB69D /* AddNewViewController.m in Sources */,
+				073B1FFC2218F3A700779E41 /* FMDatabase.m in Sources */,
 				07A78FA8211D30CB00ECB69D /* DetailViewController.m in Sources */,
 				07A78FA9211D30CB00ECB69D /* MyNavController.m in Sources */,
+				073B20022218F3A700779E41 /* FMResultSet.m in Sources */,
+				073B1FF62218F3A700779E41 /* FMDatabaseQueue.m in Sources */,
+				073B1FFF2218F3A700779E41 /* FMDatabasePool.m in Sources */,
 				07A78FAA211D30CB00ECB69D /* UserInfoViewController.m in Sources */,
 				07A78FA6211D30BB00ECB69D /* AppDelegate.m in Sources */,
+				073B1FF92218F3A700779E41 /* FMDatabaseAdditions.m in Sources */,
 				07FE4A4B1BE0C72B005D513E /* MyCell.m in Sources */,
 				07BD2E371C51062D003D672A /* LocalRemind.m in Sources */,
 				07FE4A511BE0C72B005D513E /* FMDBManager.m in Sources */,
-				0789D36B2110548500AEFFEA /* FMResultSet.m in Sources */,
-				0789D3692110548500AEFFEA /* FMDatabasePool.m in Sources */,
 				07FE4A541BE0C72B005D513E /* MyNote.m in Sources */,
-				0789D3652110548500AEFFEA /* FMDatabaseAdditions.m in Sources */,
-				0789D3632110548500AEFFEA /* FMDatabaseQueue.m in Sources */,
-				0789D3672110548500AEFFEA /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,6 +876,11 @@
 			target = 071798EC1B3A8EB20036F759 /* MyNoteBook */;
 			targetProxy = 071799071B3A8EB20036F759 /* PBXContainerItemProxy */;
 		};
+		073B1FD52218526900779E41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 073B1FC92218526900779E41 /* MyNoteBookToday */;
+			targetProxy = 073B1FD42218526900779E41 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -777,6 +888,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				071799001B3A8EB20036F759 /* Base */,
+				073B20062218F61400779E41 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -788,6 +900,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -834,6 +947,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -873,10 +987,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MySources/MyNoteBook.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5JXFMNNBPL;
+				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyNoteBook/Third/SDK/ShareSDK/Support/PlatformSDK/QQSDK",
@@ -896,11 +1011,12 @@
 					"$(PROJECT_DIR)/MyNoteBook/Third/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.riberwang.mynotebook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.notepad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -908,10 +1024,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MySources/MyNoteBook.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5JXFMNNBPL;
+				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyNoteBook/Third/SDK/ShareSDK/Support/PlatformSDK/QQSDK",
@@ -931,11 +1048,12 @@
 					"$(PROJECT_DIR)/MyNoteBook/Third/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.riberwang.mynotebook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.notepad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -945,7 +1063,8 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5JXFMNNBPL;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -955,6 +1074,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyNoteBook.app/MyNoteBook";
 			};
 			name = Debug;
@@ -963,15 +1083,102 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 5JXFMNNBPL;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MyNoteBookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyNoteBook.app/MyNoteBook";
+			};
+			name = Release;
+		};
+		073B1FD82218526900779E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBookToday/MyNoteBookToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9P3PWY83WN;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyNoteBookToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.notepad.today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		073B1FD92218526900779E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBookToday/MyNoteBookToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P3PWY83WN;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyNoteBookToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riber.notepad.today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -982,7 +1189,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5JXFMNNBPL;
+				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1005,12 +1212,12 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = MyNoteBookTest.app/PrivateHeaders;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.riberwang.mynotebook-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.riber.notepad-test";
 				PRODUCT_NAME = MyNoteBookTest;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1021,7 +1228,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5JXFMNNBPL;
+				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1044,12 +1251,12 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = MyNoteBookTest.app/PrivateHeaders;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.riberwang.mynotebook-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.riber.notepad-test";
 				PRODUCT_NAME = MyNoteBookTest;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -1079,6 +1286,15 @@
 			buildConfigurations = (
 				071799141B3A8EB20036F759 /* Debug */,
 				071799151B3A8EB20036F759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		073B1FD72218526900779E41 /* Build configuration list for PBXNativeTarget "MyNoteBookToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073B1FD82218526900779E41 /* Debug */,
+				073B1FD92218526900779E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
+    self.navigationItem.title = @"添加新事件";
+    
     if((SystemVersion >= 7.0)){
         self.automaticallyAdjustsScrollViewInsets = NO;
         self.edgesForExtendedLayout = UIRectEdgeNone;

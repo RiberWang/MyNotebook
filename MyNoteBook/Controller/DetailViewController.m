@@ -21,7 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-        
+    
+    self.navigationItem.title = @"查看详情";
+
     if ([[[UIDevice currentDevice] systemVersion] integerValue] >= 7.0) {
         self.automaticallyAdjustsScrollViewInsets = NO;
         self.edgesForExtendedLayout = UIRectEdgeNone;

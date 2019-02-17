@@ -10,5 +10,8 @@
 
 @interface ViewController : UIViewController 
 
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSMutableArray *dataSources; // 数据源
+
 @end
 

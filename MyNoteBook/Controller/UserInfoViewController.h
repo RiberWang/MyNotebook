@@ -10,12 +10,12 @@
 
 
 #ifdef DEBUG_MYNOTEBOOK
-#define AppVersion @"2.0.0"
+#define AppVersion @"1.0.0"
 #define AppName @"万事本"
 #endif
 
 #ifdef DEBUG_MYNOTEBOOKTEST
-#define AppVersion @"3.0.1"
+#define AppVersion @"1.0.0"
 #define AppName @"Riber's 记事本"
 #endif
 

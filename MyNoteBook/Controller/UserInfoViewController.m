@@ -70,11 +70,12 @@
     }
 }
 - (IBAction)connectAppStore:(id)sender {
-    // @"itms-apps://itunes.apple.com/app/id1057007765"
-    NSString *urlStr = @"https://itunes.apple.com/us/app/wan-shi-ben/id1057007765?mt=8";
+    // 评分页面
+    NSString *urlStr = [NSString stringWithFormat:@"https://itunes.apple.com/us/app/itunes-u/id1449450983?action=write-review&mt=8"];
     NSURL *url = [NSURL URLWithString:urlStr];
-    [[UIApplication sharedApplication] openURL:url];
-
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 @end

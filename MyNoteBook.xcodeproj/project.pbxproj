@@ -21,6 +21,9 @@
 		07291640221AADCF0081AF53 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B1FDA2218E80B00779E41 /* libsqlite3.0.tbd */; };
 		07291642221AAEDF0081AF53 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07291641221AAEDE0081AF53 /* libc++.tbd */; };
 		07291645221AAFC70081AF53 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07291641221AAEDE0081AF53 /* libc++.tbd */; };
+		0729164A221ADEEE0081AF53 /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0789D2C5210FFF6E00AEFFEA /* AddNewViewController.xib */; };
+		0729164B221ADEFB0081AF53 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0789D2C1210FFF6E00AEFFEA /* DetailViewController.xib */; };
+		0729164C221ADEFB0081AF53 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0789D2BE210FFF6E00AEFFEA /* UserInfoViewController.xib */; };
 		072EE2331D478D410056C9D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33CA1CE1E2300077D671 /* AdSupport.framework */; };
 		072EE2341D478D430056C9D8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C81CE1E2200077D671 /* ImageIO.framework */; };
 		072EE2351D478D450056C9D8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C61CE1E2080077D671 /* JavaScriptCore.framework */; };
@@ -784,6 +787,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0729164B221ADEFB0081AF53 /* DetailViewController.xib in Resources */,
+				0729164C221ADEFB0081AF53 /* UserInfoViewController.xib in Resources */,
+				0729164A221ADEEE0081AF53 /* AddNewViewController.xib in Resources */,
 				0789D3752110553100AEFFEA /* delete@2x.png in Resources */,
 				07A78F8B211D2DF200ECB69D /* README.txt in Resources */,
 				0789D3712110553100AEFFEA /* note.png in Resources */,

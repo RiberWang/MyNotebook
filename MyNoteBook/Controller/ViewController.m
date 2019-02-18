@@ -183,7 +183,7 @@
     titleButton.frame = CGRectMake(0, 0, 60, 44);
     [titleButton setTitle:AppName forState:UIControlStateNormal];
     [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+    titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
     [titleButton addTarget:self action:@selector(titleButtonClick) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = titleButton;
     

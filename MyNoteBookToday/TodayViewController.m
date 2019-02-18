@@ -48,7 +48,7 @@
     UILabel *detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, self.contentView.frame.size.width - 2*20, 80)];
     detailLabel.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
     detailLabel.text = dataDic[@"content"];
-    [detailLabel adjustsFontSizeToFitWidth];
+    detailLabel.adjustsFontSizeToFitWidth = YES;
     detailLabel.userInteractionEnabled = YES;
     [self.contentView addSubview:detailLabel];
     
@@ -77,6 +77,7 @@
     UILabel *detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, self.contentView.frame.size.width - 2*20, 20)];
     detailLabel.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
     detailLabel.text = @"今天天气还不错啊~~为什么不去记点东西呢？";
+    detailLabel.adjustsFontSizeToFitWidth = YES;
     [self.contentView addSubview:detailLabel];
     
     //切换按钮

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		071798FE1B3A8EB20036F759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071798FD1B3A8EB20036F759 /* Images.xcassets */; };
-		071799011B3A8EB20036F759 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071798FF1B3A8EB20036F759 /* LaunchScreen.xib */; };
 		0717990D1B3A8EB20036F759 /* MyNoteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717990C1B3A8EB20036F759 /* MyNoteBookTests.m */; };
 		071799211B3AA14B0036F759 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717991F1B3AA14B0036F759 /* MyCell.m */; };
 		071799221B3AA14B0036F759 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071799201B3AA14B0036F759 /* MyCell.xib */; };
@@ -18,6 +17,8 @@
 		071A33C71CE1E2080077D671 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C61CE1E2080077D671 /* JavaScriptCore.framework */; };
 		071A33C91CE1E2200077D671 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C81CE1E2200077D671 /* ImageIO.framework */; };
 		071A33CB1CE1E2300077D671 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33CA1CE1E2300077D671 /* AdSupport.framework */; };
+		0729163A221AA15A0081AF53 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07291639221AA15A0081AF53 /* Launch Screen.storyboard */; };
+		0729163B221AA15A0081AF53 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07291639221AA15A0081AF53 /* Launch Screen.storyboard */; };
 		072EE2331D478D410056C9D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33CA1CE1E2300077D671 /* AdSupport.framework */; };
 		072EE2341D478D430056C9D8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C81CE1E2200077D671 /* ImageIO.framework */; };
 		072EE2351D478D450056C9D8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C61CE1E2080077D671 /* JavaScriptCore.framework */; };
@@ -108,7 +109,6 @@
 		07FE4A4B1BE0C72B005D513E /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717991F1B3AA14B0036F759 /* MyCell.m */; };
 		07FE4A511BE0C72B005D513E /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889EA1B3BCE1E00E867F5 /* FMDBManager.m */; };
 		07FE4A541BE0C72B005D513E /* MyNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 076889D71B3BCA2F00E867F5 /* MyNote.m */; };
-		07FE4A5D1BE0C72B005D513E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071798FF1B3A8EB20036F759 /* LaunchScreen.xib */; };
 		07FE4A5E1BE0C72B005D513E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071798FD1B3A8EB20036F759 /* Images.xcassets */; };
 		07FE4A601BE0C72B005D513E /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071799201B3AA14B0036F759 /* MyCell.xib */; };
 /* End PBXBuildFile section */
@@ -147,7 +147,6 @@
 /* Begin PBXFileReference section */
 		071798ED1B3A8EB20036F759 /* MyNoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		071798FD1B3A8EB20036F759 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		071799001B3A8EB20036F759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		071799061B3A8EB20036F759 /* MyNoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0717990C1B3A8EB20036F759 /* MyNoteBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNoteBookTests.m; sourceTree = "<group>"; };
 		0717991E1B3AA14B0036F759 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
@@ -159,6 +158,7 @@
 		071A33C61CE1E2080077D671 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		071A33C81CE1E2200077D671 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		071A33CA1CE1E2300077D671 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		07291639221AA15A0081AF53 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		073B1FCA2218526900779E41 /* MyNoteBookToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNoteBookToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		073B1FCD2218526900779E41 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		073B1FCE2218526900779E41 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
@@ -177,7 +177,6 @@
 		073B1FF32218F3A700779E41 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		073B1FF42218F3A700779E41 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		073B20042218F3E300779E41 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		073B20062218F61400779E41 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		076889D61B3BCA2F00E867F5 /* MyNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNote.h; sourceTree = "<group>"; };
 		076889D71B3BCA2F00E867F5 /* MyNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNote.m; sourceTree = "<group>"; };
 		076889E91B3BCE1E00E867F5 /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
@@ -342,8 +341,8 @@
 				071799191B3A93030036F759 /* Model */,
 				0717991C1B3A93030036F759 /* View */,
 				071798FD1B3A8EB20036F759 /* Images.xcassets */,
-				071798FF1B3A8EB20036F759 /* LaunchScreen.xib */,
 				071798F01B3A8EB20036F759 /* Supporting Files */,
+				07291639221AA15A0081AF53 /* Launch Screen.storyboard */,
 			);
 			path = MyNoteBook;
 			sourceTree = "<group>";
@@ -689,7 +688,7 @@
 					071798EC1B3A8EB20036F759 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 9P3PWY83WN;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -705,7 +704,7 @@
 					073B1FC92218526900779E41 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 9P3PWY83WN;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -717,7 +716,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -752,8 +751,8 @@
 				0789D3742110553100AEFFEA /* delete@2x.png in Resources */,
 				07A78F94211D2DF200ECB69D /* ShareSDKUI.bundle in Resources */,
 				0789D2CC210FFF6F00AEFFEA /* DetailViewController.xib in Resources */,
-				071799011B3A8EB20036F759 /* LaunchScreen.xib in Resources */,
 				0789D3722110553100AEFFEA /* newIcon.png in Resources */,
+				0729163A221AA15A0081AF53 /* Launch Screen.storyboard in Resources */,
 				0789D3702110553100AEFFEA /* note.png in Resources */,
 				0789D2C9210FFF6F00AEFFEA /* UserInfoViewController.xib in Resources */,
 				071798FE1B3A8EB20036F759 /* Images.xcassets in Resources */,
@@ -787,11 +786,11 @@
 				07A78F8B211D2DF200ECB69D /* README.txt in Resources */,
 				0789D3712110553100AEFFEA /* note.png in Resources */,
 				07A78F93211D2DF200ECB69D /* ShareSDK.bundle in Resources */,
-				07FE4A5D1BE0C72B005D513E /* LaunchScreen.xib in Resources */,
 				0789D3732110553100AEFFEA /* newIcon.png in Resources */,
 				07FE4A5E1BE0C72B005D513E /* Images.xcassets in Resources */,
 				07A78F87211D2DF200ECB69D /* WeiboSDK.bundle in Resources */,
 				07FE4A601BE0C72B005D513E /* MyCell.xib in Resources */,
+				0729163B221AA15A0081AF53 /* Launch Screen.storyboard in Resources */,
 				07A78F95211D2DF200ECB69D /* ShareSDKUI.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -882,18 +881,6 @@
 			targetProxy = 073B1FD42218526900779E41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		071798FF1B3A8EB20036F759 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				071799001B3A8EB20036F759 /* Base */,
-				073B20062218F61400779E41 /* zh-Hans */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0717990E1B3A8EB20036F759 /* Debug */ = {
@@ -988,9 +975,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MySources/MyNoteBook.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1014,7 +1001,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.riber.notepad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Notepad_Dev;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
@@ -1027,7 +1014,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MySources/MyNoteBook.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1051,7 +1038,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.riber.notepad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Notepad_Dis;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
@@ -1117,9 +1104,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = MyNoteBookToday/MyNoteBookToday.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
@@ -1134,7 +1121,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.riber.notepad.today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = NotepadToday_Dev;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
@@ -1163,7 +1150,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyNoteBookToday/MyNoteBookToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9P3PWY83WN;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1175,7 +1162,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.riber.notepad.today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = NotepadToday_Dis;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
@@ -1186,6 +1173,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MySources/MyNoteBookTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1225,6 +1213,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MySources/MyNoteBookTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;

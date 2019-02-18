@@ -13,16 +13,17 @@
 		071799221B3AA14B0036F759 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071799201B3AA14B0036F759 /* MyCell.xib */; };
 		071A33C11CE1E1EB0077D671 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C01CE1E1EB0077D671 /* libicucore.tbd */; };
 		071A33C31CE1E1F30077D671 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C21CE1E1F30077D671 /* libz.tbd */; };
-		071A33C51CE1E2000077D671 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C41CE1E2000077D671 /* libstdc++.tbd */; };
 		071A33C71CE1E2080077D671 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C61CE1E2080077D671 /* JavaScriptCore.framework */; };
 		071A33C91CE1E2200077D671 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C81CE1E2200077D671 /* ImageIO.framework */; };
 		071A33CB1CE1E2300077D671 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33CA1CE1E2300077D671 /* AdSupport.framework */; };
 		0729163A221AA15A0081AF53 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07291639221AA15A0081AF53 /* Launch Screen.storyboard */; };
 		0729163B221AA15A0081AF53 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07291639221AA15A0081AF53 /* Launch Screen.storyboard */; };
+		07291640221AADCF0081AF53 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B1FDA2218E80B00779E41 /* libsqlite3.0.tbd */; };
+		07291642221AAEDF0081AF53 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07291641221AAEDE0081AF53 /* libc++.tbd */; };
+		07291645221AAFC70081AF53 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07291641221AAEDE0081AF53 /* libc++.tbd */; };
 		072EE2331D478D410056C9D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33CA1CE1E2300077D671 /* AdSupport.framework */; };
 		072EE2341D478D430056C9D8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C81CE1E2200077D671 /* ImageIO.framework */; };
 		072EE2351D478D450056C9D8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C61CE1E2080077D671 /* JavaScriptCore.framework */; };
-		072EE2361D478D730056C9D8 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C41CE1E2000077D671 /* libstdc++.tbd */; };
 		072EE2371D478DA00056C9D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C21CE1E1F30077D671 /* libz.tbd */; };
 		072EE2381D478F530056C9D8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A33C01CE1E1EB0077D671 /* libicucore.tbd */; };
 		073B1FCB2218526900779E41 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */; };
@@ -154,11 +155,11 @@
 		071799201B3AA14B0036F759 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		071A33C01CE1E1EB0077D671 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		071A33C21CE1E1F30077D671 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		071A33C41CE1E2000077D671 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		071A33C61CE1E2080077D671 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		071A33C81CE1E2200077D671 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		071A33CA1CE1E2300077D671 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		07291639221AA15A0081AF53 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		07291641221AAEDE0081AF53 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		073B1FCA2218526900779E41 /* MyNoteBookToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNoteBookToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		073B1FCD2218526900779E41 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		073B1FCE2218526900779E41 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
@@ -237,6 +238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07291645221AAFC70081AF53 /* libc++.tbd in Frameworks */,
 				073B1FDB2218E80B00779E41 /* libsqlite3.0.tbd in Frameworks */,
 				072EE2381D478F530056C9D8 /* libicucore.tbd in Frameworks */,
 				07A78F8E211D2DF200ECB69D /* TencentOpenAPI.framework in Frameworks */,
@@ -247,7 +249,6 @@
 				07A78FA4211D2DF200ECB69D /* MOBFoundation.framework in Frameworks */,
 				072EE2371D478DA00056C9D8 /* libz.tbd in Frameworks */,
 				07A78F8C211D2DF200ECB69D /* libWeChatSDK.a in Frameworks */,
-				072EE2361D478D730056C9D8 /* libstdc++.tbd in Frameworks */,
 				07A78F88211D2DF200ECB69D /* libWeiboSDK.a in Frameworks */,
 				072EE2351D478D450056C9D8 /* JavaScriptCore.framework in Frameworks */,
 				07A78F98211D2DF200ECB69D /* ShareSDKUI.framework in Frameworks */,
@@ -279,6 +280,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07291642221AAEDF0081AF53 /* libc++.tbd in Frameworks */,
+				07291640221AADCF0081AF53 /* libsqlite3.0.tbd in Frameworks */,
 				071A33CB1CE1E2300077D671 /* AdSupport.framework in Frameworks */,
 				07A78F8F211D2DF200ECB69D /* TencentOpenAPI.framework in Frameworks */,
 				07A78F9B211D2DF200ECB69D /* QQConnector.framework in Frameworks */,
@@ -290,7 +293,6 @@
 				07A78F8D211D2DF200ECB69D /* libWeChatSDK.a in Frameworks */,
 				071A33C71CE1E2080077D671 /* JavaScriptCore.framework in Frameworks */,
 				07A78F89211D2DF200ECB69D /* libWeiboSDK.a in Frameworks */,
-				071A33C51CE1E2000077D671 /* libstdc++.tbd in Frameworks */,
 				07A78F99211D2DF200ECB69D /* ShareSDKUI.framework in Frameworks */,
 				07A78F9F211D2DF200ECB69D /* WechatConnector.framework in Frameworks */,
 				07A78F91211D2DF200ECB69D /* ShareSDKConnector.framework in Frameworks */,
@@ -309,7 +311,6 @@
 				071A33CA1CE1E2300077D671 /* AdSupport.framework */,
 				071A33C81CE1E2200077D671 /* ImageIO.framework */,
 				071A33C61CE1E2080077D671 /* JavaScriptCore.framework */,
-				071A33C41CE1E2000077D671 /* libstdc++.tbd */,
 				071A33C21CE1E1F30077D671 /* libz.tbd */,
 				071A33C01CE1E1EB0077D671 /* libicucore.tbd */,
 				071798EF1B3A8EB20036F759 /* MyNoteBook */,
@@ -487,6 +488,7 @@
 		078D4A7B1D5A3A74000B0FA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07291641221AAEDE0081AF53 /* libc++.tbd */,
 				073B20042218F3E300779E41 /* libstdc++.6.0.9.tbd */,
 				073B1FDA2218E80B00779E41 /* libsqlite3.0.tbd */,
 				078D4A7C1D5A3A74000B0FA9 /* NotificationCenter.framework */,
@@ -716,7 +718,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1104,7 +1106,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = MyNoteBookToday/MyNoteBookToday.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1173,7 +1175,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MySources/MyNoteBookTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1213,8 +1214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyNoteBook/MySources/MyNoteBookTest.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P3PWY83WN;

@@ -12,11 +12,10 @@
 #import "DetailViewController.h"
 #import "FMDBManager.h"
 #import "MyNote.h"
-
-#import <ShareSDKUI/ShareSDK+SSUI.h>
-#import <ShareSDK/NSMutableDictionary+SSDKShare.h>
-
 #import "UserInfoViewController.h"
+
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDK+SSUI.h>
 
 // 屏幕尺寸
 #define KScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -497,59 +496,59 @@
 
 #pragma mark - share
 - (void)shareToView:(MyCell *)cell {
+    // 使用ShareSDK提供的分享菜单
     //1、创建分享参数
     NSArray* imageArray = @[[UIImage imageNamed:@"newIcon.png"]];
-    //（注意：图片必须要在Xcode左边目录里面，名称必须要传正确，如果要分享网络图片，可以这样传image参数 images:@[@"http://mob.com/Assets/images/logo.png?v=20150320"]）
-    if (imageArray) {
-        
-        NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
-        [shareParams SSDKSetupShareParamsByText:@"我的第一个记事本"
-                                         images:imageArray
-                                            url:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/wan-shi-ben/id1057007765?mt=8"]
-                                          title:@"万事本"
-                                           type:SSDKContentTypeAuto];
-        //有的平台要客户端分享需要加此方法，例如微博
-        [shareParams SSDKEnableUseClientShare];
-        
-        //大家请注意：4.1.2版本开始因为UI重构了下，所以这个弹出分享菜单的接口有点改变，如果集成的是4.1.2以及以后版本，如下调用：
-        [ShareSDK showShareActionSheet:nil customItems:@[@(SSDKPlatformTypeQQ), @(SSDKPlatformTypeWechat),@(SSDKPlatformTypeSinaWeibo)] shareParams:shareParams sheetConfiguration:nil onStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end) {
-            switch (state) {
-                case SSDKResponseStateSuccess:
-                {
-                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享成功"
-                                                                        message:nil
-                                                                       delegate:nil
-                                                              cancelButtonTitle:@"确定"
-                                                              otherButtonTitles:nil];
-                    [alertView show];
-                    break;
-                }
-                case SSDKResponseStateFail:
-                {
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败"
-                                                                    message:[NSString stringWithFormat:@"%@",error]
-                                                                   delegate:nil
-                                                          cancelButtonTitle:@"OK"
-                                                          otherButtonTitles:nil, nil];
-                    [alert show];
-                    break;
-                }
-                case SSDKResponseStateCancel:
-                {
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享取消"
-                                                                    message:nil
-                                                                   delegate:nil
-                                                          cancelButtonTitle:@"OK"
-                                                          otherButtonTitles:nil, nil];
-                    [alert show];
-                    break;
-                }
-                    
-                default:
-                    break;
-            }
-        }];
-    }
+    //（注意：图片可以是UIImage对象，名称必须要传正确，如果要分享网络图片，可以这样传iamge参数 images:@[@"http://mob.com/Assets/images/logo.png?v=20150320"]）
+    NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+    [shareParams SSDKSetupShareParamsByText:@"我的第一个记事本"
+                                     images:imageArray
+                                        url:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/wan-shi-ben/id1057007765?mt=8"]
+                                      title:@"万事本"
+                                       type:SSDKContentTypeAuto];
+
+    //大家请注意：4.1.2版本开始因为UI重构了下，所以这个弹出分享菜单的接口有点改变，如果集成的是4.1.2以及以后版本，如下调用：
+    [ShareSDK showShareActionSheet:nil
+                       customItems:nil
+                       shareParams:shareParams
+                sheetConfiguration:nil
+                    onStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end) {
+                        switch (state) {
+                            case SSDKResponseStateSuccess:
+                            {
+                                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享成功"
+                                                                                    message:nil
+                                                                                   delegate:nil
+                                                                          cancelButtonTitle:@"确定"
+                                                                          otherButtonTitles:nil];
+                                [alertView show];
+                                break;
+                            }
+                            case SSDKResponseStateFail:
+                            {
+                                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败"
+                                                                                message:[NSString stringWithFormat:@"%@",error]
+                                                                               delegate:nil
+                                                                      cancelButtonTitle:@"OK"
+                                                                      otherButtonTitles:nil, nil];
+                                [alert show];
+                                break;
+                            }
+                            case SSDKResponseStateCancel:
+                            {
+                                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享取消"
+                                                                                    message:nil
+                                                                                   delegate:nil
+                                                                          cancelButtonTitle:@"确定"
+                                                                          otherButtonTitles:nil];
+                                [alertView show];
+                                break;
+                            }
+
+                            default:
+                                break;
+                        }
+                    }];
 }
 
 #pragma mark - 添加页面代理方法

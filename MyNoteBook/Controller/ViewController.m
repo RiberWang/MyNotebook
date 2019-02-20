@@ -391,7 +391,6 @@
     
     if (_isEdit) {
         self.navigationItem.rightBarButtonItem.enabled = NO;
-        self.navigationItem.leftBarButtonItem.title = @"Done";
 
         // 使 searchBar 搜索不可用 在这里写 会有问题 已弃用
 //        UIView *view = [[UIView alloc] initWithFrame:_searchBar.frame];

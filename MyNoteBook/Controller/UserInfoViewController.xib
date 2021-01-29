@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,10 +22,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Bj-pH-BDL">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="newIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Bj-pH-BDL">
                     <rect key="frame" x="137.5" y="120" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="87" id="SGd-Z1-08k"/>
                         <constraint firstAttribute="height" constant="87" id="rNi-lX-GLY">
                             <variation key="widthClass=compact" constant="100"/>
                         </constraint>
@@ -35,26 +34,24 @@
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="SGd-Z1-08k"/>
                             <exclude reference="rNi-lX-GLY"/>
                             <exclude reference="sUk-C1-dak"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
                         <mask key="constraints">
-                            <include reference="SGd-Z1-08k"/>
                             <include reference="rNi-lX-GLY"/>
                             <include reference="sUk-C1-dak"/>
                         </mask>
                     </variation>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ©2015-2016 王瑞博. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BJ-VS-qs5">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ©2015-2019 王瑞博. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BJ-VS-qs5">
                     <rect key="frame" x="0.0" y="637" width="375" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v 2.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4La-aK-6kH">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4La-aK-6kH">
                     <rect key="frame" x="46" y="262" width="283" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="dN8-Zz-Lg4"/>
@@ -190,8 +187,14 @@
                     <exclude reference="aja-Ua-6f4"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Hth-zY-9II"/>
-                    <exclude reference="hh7-mW-GRu"/>
+                    <exclude reference="5cp-8Y-TcC"/>
+                    <exclude reference="FxS-Ym-OJ9"/>
+                    <exclude reference="M6B-oC-eHZ"/>
+                    <exclude reference="eE8-Rs-cYi"/>
+                    <exclude reference="eno-Rl-izz"/>
+                    <exclude reference="lK0-1X-9eO"/>
+                    <exclude reference="n21-Aq-f95"/>
+                    <exclude reference="wHw-Gx-5K6"/>
                     <exclude reference="5XE-jO-ajX"/>
                     <exclude reference="Gq8-4x-Njz"/>
                     <exclude reference="WBp-Nm-IXx"/>
@@ -203,20 +206,14 @@
                     <exclude reference="hfS-ou-Ojq"/>
                     <exclude reference="nY0-vG-7u1"/>
                     <exclude reference="zAX-Xy-uUd"/>
+                    <exclude reference="Hth-zY-9II"/>
+                    <exclude reference="hh7-mW-GRu"/>
                     <exclude reference="1N6-wl-3mt"/>
                     <exclude reference="Dek-xw-lW3"/>
                     <exclude reference="Ons-8C-3lP"/>
                     <exclude reference="izU-xx-0Ft"/>
                     <exclude reference="l04-Zv-CeA"/>
                     <exclude reference="vvc-n5-kPf"/>
-                    <exclude reference="5cp-8Y-TcC"/>
-                    <exclude reference="FxS-Ym-OJ9"/>
-                    <exclude reference="M6B-oC-eHZ"/>
-                    <exclude reference="eE8-Rs-cYi"/>
-                    <exclude reference="eno-Rl-izz"/>
-                    <exclude reference="lK0-1X-9eO"/>
-                    <exclude reference="n21-Aq-f95"/>
-                    <exclude reference="wHw-Gx-5K6"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -228,8 +225,14 @@
                     <include reference="aja-Ua-6f4"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Hth-zY-9II"/>
-                    <include reference="hh7-mW-GRu"/>
+                    <exclude reference="5cp-8Y-TcC"/>
+                    <include reference="FxS-Ym-OJ9"/>
+                    <exclude reference="M6B-oC-eHZ"/>
+                    <include reference="eE8-Rs-cYi"/>
+                    <exclude reference="eno-Rl-izz"/>
+                    <exclude reference="lK0-1X-9eO"/>
+                    <exclude reference="n21-Aq-f95"/>
+                    <exclude reference="wHw-Gx-5K6"/>
                     <include reference="5XE-jO-ajX"/>
                     <include reference="Gq8-4x-Njz"/>
                     <include reference="WBp-Nm-IXx"/>
@@ -241,25 +244,20 @@
                     <include reference="hfS-ou-Ojq"/>
                     <include reference="nY0-vG-7u1"/>
                     <include reference="zAX-Xy-uUd"/>
+                    <include reference="Hth-zY-9II"/>
+                    <include reference="hh7-mW-GRu"/>
                     <include reference="1N6-wl-3mt"/>
                     <exclude reference="Dek-xw-lW3"/>
                     <include reference="Ons-8C-3lP"/>
                     <include reference="izU-xx-0Ft"/>
                     <include reference="l04-Zv-CeA"/>
                     <exclude reference="vvc-n5-kPf"/>
-                    <exclude reference="5cp-8Y-TcC"/>
-                    <include reference="FxS-Ym-OJ9"/>
-                    <exclude reference="M6B-oC-eHZ"/>
-                    <include reference="eE8-Rs-cYi"/>
-                    <exclude reference="eno-Rl-izz"/>
-                    <exclude reference="lK0-1X-9eO"/>
-                    <exclude reference="n21-Aq-f95"/>
-                    <exclude reference="wHw-Gx-5K6"/>
                 </mask>
             </variation>
+            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
         </view>
     </objects>
     <resources>
-        <image name="newIcon.png" width="1024" height="1024"/>
+        <image name="newIcon.png" width="120" height="120"/>
     </resources>
 </document>
